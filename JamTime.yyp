@@ -71,11 +71,35 @@
             }
         },
         {
+            "Key": "53fc557f-470f-45b9-a587-12e3b78cd315",
+            "Value": {
+                "id": "a8c27ba0-e526-46b9-b19e-6e683c361676",
+                "resourcePath": "views\\53fc557f-470f-45b9-a587-12e3b78cd315.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "544c70e5-3fcb-4f93-8896-c1d29ca29043",
             "Value": {
                 "id": "3a0ea455-0803-4281-b096-f40acb66df84",
                 "resourcePath": "sprites\\sWall\\sWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5692ea4e-81b2-4843-9e0e-162ba5c779fa",
+            "Value": {
+                "id": "501411c0-a5fb-491c-bad5-3cb23a89b55a",
+                "resourcePath": "sprites\\sEnemy\\sEnemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ed9458d-062a-4de5-b08e-cb1c6fe6e325",
+            "Value": {
+                "id": "ed69b1b3-8ac4-4971-8ab6-9eba325cad38",
+                "resourcePath": "objects\\oLevelGenerator\\oLevelGenerator.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -199,11 +223,27 @@
             }
         },
         {
+            "Key": "c102d7eb-d175-4b61-b260-15ebd26938f4",
+            "Value": {
+                "id": "15c5d5ec-78bf-4143-930d-a9ca955226e7",
+                "resourcePath": "objects\\oEnemyPatrol\\oEnemyPatrol.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c7825d6e-a631-4a4a-83e2-b1618c02c23c",
             "Value": {
                 "id": "cebd12f5-e742-49b5-b0fb-f51a5b19098e",
                 "resourcePath": "views\\c7825d6e-a631-4a4a-83e2-b1618c02c23c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c7d8d6c3-a474-425e-ad69-30dd7eff78f6",
+            "Value": {
+                "id": "f572c644-ba8a-4e20-acc1-c6ab0007c90a",
+                "resourcePath": "scripts\\cartesianToPolar\\cartesianToPolar.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -266,7 +306,8 @@
     "script_order": [
         "492fc192-287b-40e2-8a9d-e11b8a2366e2",
         "d12c938d-3035-4811-8f47-4e1e04c4a2bb",
-        "0a86cdb0-00cd-4c34-b1e9-98c9f59fbdd6"
+        "0a86cdb0-00cd-4c34-b1e9-98c9f59fbdd6",
+        "c7d8d6c3-a474-425e-ad69-30dd7eff78f6"
     ],
     "tutorial": ""
 }

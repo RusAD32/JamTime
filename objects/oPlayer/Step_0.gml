@@ -54,8 +54,8 @@ var move_normalized_vert = move_vert / move_vector_len;
 var move_normalized_hor = move_hor / move_vector_len;
 
 //calculating last direction to choose the correct sprite
-var cur_vert = round(move_vert/move_vector_len_total);
-var cur_hor = round(move_hor/move_vector_len_total);
+var cur_vert = sign(move_vert);
+var cur_hor = sign(move_hor);
 if (cur_vert != 0 || cur_hor != 0) {
 	up = cur_vert;
 	left = cur_hor;
@@ -112,8 +112,8 @@ if x + hspd < 0 || x + hspd > room_width{
 	hspd = 0	
 } 
 //vertical
-if place_meeting(x, y + vspd, oCollidable) {
-	while ! place_meeting(x, y + sign(vspd), oCollidable) {
+if place_meeting(x+hspd, y + vspd, oCollidable) {
+	while ! place_meeting(x+hspd, y + sign(vspd), oCollidable) {
 		y += sign(vspd);
 	} 
 	vspd = 0;
