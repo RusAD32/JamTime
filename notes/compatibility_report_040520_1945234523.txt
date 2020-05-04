@@ -1,0 +1,39 @@
+Converting GML script: ${project_dir}\scripts\scr_create_dungeon\scr_create_dungeon.gml
+Converted description /// @description  scr_create_dungeon(cell size, reps, carver, size)/// @param cell size
+/// @param  reps
+/// @param  carver
+/// @param  size
+
+Converting GML script: ${project_dir}\scripts\scr_create_dungeon2\scr_create_dungeon2.gml
+Converted description /// @description  scr_create_dungeon2(Cell Size, Reps, Direction Frequency, Room size average, Room Frequency)/// @param Cell Size
+/// @param  Reps
+/// @param  Direction Frequency
+/// @param  Room size average
+/// @param  Room Frequency
+
+Converting GML script: ${project_dir}\scripts\scr_create_dungeon3\scr_create_dungeon3.gml
+Converted description /// @description  scr_create_dungeon3(Cell Size, Rooms, Room Size, Hallway Size, Padding)/// @param Cell Size
+/// @param  Rooms
+/// @param  Room Size
+/// @param  Hallway Size
+/// @param  Padding
+
+Converting GML script: ${project_dir}\scripts\scr_create_dungeon4\scr_create_dungeon4.gml
+Converted description /// @description scr_create_dungeon4(Cellsize, Rooms, Room size MAX, Room size MIN)/// @param Cellsize
+/// @param  Rooms
+/// @param  Room size MAX
+/// @param  Room size MIN
+
+Converting GML script: ${project_dir}\scripts\scr_save_dungeon\scr_save_dungeon.gml
+Converted description /// @description scr_save_dungeon(Save Name)/// @param Save Name
+
+Converting GML script: ${project_dir}\scripts\scr_load_dungeon\scr_load_dungeon.gml
+Converted description /// @description scr_load_dungeon(Save Name, Cell Size)/// @param Save Name
+/// @param  Cell Size
+
+!!! Font fnt_dungeonname uses a font (SquareFont) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fnt_dungeonname\fnt_dungeonname.gms1.png
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'tile/tile_add.gml'
+Added compatibility script '__global_object_depths.gml'

@@ -1,7 +1,7 @@
 /// @description init player
 
 // variables for movement
-max_speed = 5;
+max_speed = 7;
 
 hspd = 0;
 vspd = 0;
@@ -24,3 +24,4 @@ w = display_get_gui_width();
 h = display_get_gui_height();
 
 deactivaion_offset = 1000;
+show_debug_message("Я родился!")

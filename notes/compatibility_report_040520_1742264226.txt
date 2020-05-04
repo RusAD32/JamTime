@@ -1,0 +1,155 @@
+Converting GML script: ${project_dir}\scripts\CELLS_GUIDE\CELLS_GUIDE.gml
+Converted string - line 69: "\/" -> "\\/"
+Converted string - line 279: "[] .\/ . . . . . . . . ." -> "[] .\\/ . . . . . . . . ."
+Converted string - line 306: "[] .\/ . . . . . . . .[]" -> "[] .\\/ . . . . . . . .[]"
+Converted string - line 328: " . . . . .\/ . . . . . ." -> " . . . . .\\/ . . . . . ."
+
+Converting GML script: ${project_dir}\scripts\office_8x12\office_8x12.gml
+Converted string - line 16: "\/" -> "\\/"
+Converted string - line 318: "[] .\/ . . . . . . . . ." -> "[] .\\/ . . . . . . . . ."
+Converted string - line 342: "[] .\/ . .<><> . . . .[]" -> "[] .\\/ . .<><> . . . .[]"
+Converted string - line 358: " . . . . .\/ . . . . . ." -> " . . . . .\\/ . . . . . ."
+Converted string - line 374: " . . . .\/ .\/ . . . . ." -> " . . . .\\/ .\\/ . . . . ."
+Converted string - line 390: " . . . . .\/TT . . . . ." -> " . . . . .\\/TT . . . . ."
+Converted string - line 406: " . . . .\/TTTT . . . . ." -> " . . . .\\/TTTT . . . . ."
+
+Converting GML script: ${project_dir}\scripts\dungeon_8x12_optimized\dungeon_8x12_optimized.gml
+Converted string - line 16: "\/" -> "\\/"
+Converted string - line 73: "[] .\/ . . . . . .\/ .[]" -> "[] .\\/ . . . . . .\\/ .[]"
+Converted string - line 82: "[] .\/ . . . . . .\/ .[]" -> "[] .\\/ . . . . . .\\/ .[]"
+Converted string - line 93: "[] .\/ . . . . . .\/ .[]" -> "[] .\\/ . . . . . .\\/ .[]"
+Converted string - line 102: "[] .\/ . . . . . .\/ .[]" -> "[] .\\/ . . . . . .\\/ .[]"
+Converted string - line 319: "[] .\/ . . . . . . . . ." -> "[] .\\/ . . . . . . . . ."
+Converted string - line 343: "[] .\/ . .<><> . . . .[]" -> "[] .\\/ . .<><> . . . .[]"
+Converted string - line 359: " . . . . .\/ . . . . . ." -> " . . . . .\\/ . . . . . ."
+Converted string - line 375: " . . . .\/ .\/ . . . . ." -> " . . . .\\/ .\\/ . . . . ."
+Converted string - line 391: " . . . . .\/TT . . . . ." -> " . . . . .\\/TT . . . . ."
+Converted string - line 407: " . . . .\/TTTT . . . . ." -> " . . . .\\/TTTT . . . . ."
+
+Converting GML script: ${project_dir}\scripts\dungeon_8x12\dungeon_8x12.gml
+Converted string - line 16: "\/" -> "\\/"
+Converted string - line 318: "[] .\/ . . . . . . . . ." -> "[] .\\/ . . . . . . . . ."
+Converted string - line 342: "[] .\/ . .<><> . . . .[]" -> "[] .\\/ . .<><> . . . .[]"
+Converted string - line 358: " . . . . .\/ . . . . . ." -> " . . . . .\\/ . . . . . ."
+Converted string - line 374: " . . . .\/ .\/ . . . . ." -> " . . . .\\/ .\\/ . . . . ."
+Converted string - line 390: " . . . . .\/TT . . . . ." -> " . . . . .\\/TT . . . . ."
+Converted string - line 406: " . . . .\/TTTT . . . . ." -> " . . . .\\/TTTT . . . . ."
+
+Converting GML script: ${project_dir}\scripts\dungeon_16x6\dungeon_16x6.gml
+Converted string - line 16: "\/" -> "\\/"
+Converted string - line 382: "[] .\/ . . . . . . . . . . . . ." -> "[] .\\/ . . . . . . . . . . . . ."
+Converted string - line 412: "[] .\/ . . . .<><> . . . . . .[]" -> "[] .\\/ . . . .<><> . . . . . .[]"
+Converted string - line 430: " . . . . . . .\/ . . . . . . . ." -> " . . . . . . .\\/ . . . . . . . ."
+Converted string - line 451: " . . . . . .\/ .\/ . . . . . . ." -> " . . . . . .\\/ .\\/ . . . . . . ."
+Converted string - line 471: " . . . . . . .\/TT . . . . . . ." -> " . . . . . . .\\/TT . . . . . . ."
+Converted string - line 491: " . . . . . .\/TTTT . . . . . . ." -> " . . . . . .\\/TTTT . . . . . . ."
+
+Converting GML script: ${project_dir}\scripts\office_legend\office_legend.gml
+Converted string - line 15: "\/" -> "\\/"
+
+Resource name collision 'office_cells' already exists, renamed to 'office_cells_scripts_dungeon_generator_cells_legacy'
+Resource name collision 'dungeon_cells' already exists, renamed to 'dungeon_cells_scripts_dungeon_generator_cells_legacy'
+Resource name collision 'genearate_legacy_dungeon' already exists, renamed to 'genearate_legacy_dungeon_scripts_dungeon_generator_cells_legacy'
+Resource name collision 'ADD_COMMANDS_GUIDE' already exists, renamed to 'ADD_COMMANDS_GUIDE_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_eastern_pass' already exists, renamed to 'add_eastern_pass_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_western_path' already exists, renamed to 'add_western_path_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_southern_pass' already exists, renamed to 'add_southern_pass_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_northern_pass' already exists, renamed to 'add_northern_pass_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_air' already exists, renamed to 'add_air_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'open_sides' already exists, renamed to 'open_sides_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_all_southern_passes' already exists, renamed to 'add_all_southern_passes_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_all_northern_passes' already exists, renamed to 'add_all_northern_passes_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_all_western_passes' already exists, renamed to 'add_all_western_passes_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'add_all_eastern_passes' already exists, renamed to 'add_all_eastern_passes_scripts_dungeon_generator_commands_add passages'
+Resource name collision 'INSERT_COMMANDS_GUIDE' already exists, renamed to 'INSERT_COMMANDS_GUIDE_scripts_dungeon_generator_commands_insert custom cells'
+Resource name collision 'insert_finish_room' already exists, renamed to 'insert_finish_room_scripts_dungeon_generator_commands_insert custom cells'
+Resource name collision 'insert_key_room' already exists, renamed to 'insert_key_room_scripts_dungeon_generator_commands_insert custom cells'
+Resource name collision 'insert_lock_room' already exists, renamed to 'insert_lock_room_scripts_dungeon_generator_commands_insert custom cells'
+Resource name collision 'insert_start_and_finish' already exists, renamed to 'insert_start_and_finish_scripts_dungeon_generator_commands_insert custom cells'
+Resource name collision 'insert_start_room' already exists, renamed to 'insert_start_room_scripts_dungeon_generator_commands_insert custom cells'
+Resource name collision 'insert_locked_finish_room' already exists, renamed to 'insert_locked_finish_room_scripts_dungeon_generator_commands_insert custom cells'
+Converting GML script: ${project_dir}\scripts\walk_script\walk_script.gml
+Converted string - line 37: 'W' -> "W"
+Converted string - line 42: 'S' -> "S"
+Converted string - line 47: 'A' -> "A"
+Converted string - line 52: 'D' -> "D"
+
+Resource name collision 'walk_script' already exists, renamed to 'walk_script_scripts_dungeon_generator_misc'
+Converting GML script: ${project_dir}\scripts\walk_script_scripts_dungeon_generator_misc\walk_script_scripts_dungeon_generator_misc.gml
+Converted string - line 37: 'W' -> "W"
+Converted string - line 42: 'S' -> "S"
+Converted string - line 47: 'A' -> "A"
+Converted string - line 52: 'D' -> "D"
+
+Resource name collision 'set_depth' already exists, renamed to 'set_depth_scripts_dungeon_generator_misc'
+Resource name collision 'dg_add_western_pass' already exists, renamed to 'dg_add_western_pass_scripts_dungeon_generator_system_add passages'
+Resource name collision 'dg_add_eastern_pass' already exists, renamed to 'dg_add_eastern_pass_scripts_dungeon_generator_system_add passages'
+Resource name collision 'dg_add_southern_pass' already exists, renamed to 'dg_add_southern_pass_scripts_dungeon_generator_system_add passages'
+Resource name collision 'dg_add_northern_pass' already exists, renamed to 'dg_add_northern_pass_scripts_dungeon_generator_system_add passages'
+Resource name collision 'dg_add_air' already exists, renamed to 'dg_add_air_scripts_dungeon_generator_system_add passages'
+Resource name collision 'dg_insert_finish_room' already exists, renamed to 'dg_insert_finish_room_scripts_dungeon_generator_system_insert rooms'
+Resource name collision 'dg_insert_key_room' already exists, renamed to 'dg_insert_key_room_scripts_dungeon_generator_system_insert rooms'
+Resource name collision 'dg_insert_lock_room' already exists, renamed to 'dg_insert_lock_room_scripts_dungeon_generator_system_insert rooms'
+Resource name collision 'dg_insert_locked_finish_room' already exists, renamed to 'dg_insert_locked_finish_room_scripts_dungeon_generator_system_insert rooms'
+Resource name collision 'dg_insert_start_room' already exists, renamed to 'dg_insert_start_room_scripts_dungeon_generator_system_insert rooms'
+Converting GML script: ${project_dir}\scripts\generate_base_dungeon\generate_base_dungeon.gml
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 279: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 279: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 279: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 286: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 286: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 286: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 293: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 293: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 293: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 300: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 300: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 300: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 307: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 307: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 307: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 314: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 314: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 314: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 333: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 333: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 333: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 403: single quotes no longer allowed for string
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 403: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 403: unexpected unary operator ==
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 447: unexpected syntax error
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 455: unnecessary expression yy used as a statement
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 455: unexpected syntax error
+ERROR: D:\Games\JamTime\scripts\generate_base_dungeon\generate_base_dungeon.gml - 518: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\generate_base_dungeon\generate_base_dungeon.gml
+
+Resource name collision 'extract_dungeon_background' already exists, renamed to 'extract_dungeon_background_scripts_dungeon_generator_backgrounds'
+Resource name collision 'extract_dungeon_background_16x6' already exists, renamed to 'extract_dungeon_background_16x6_scripts_dungeon_generator_backgrounds'
+Resource name collision 'extract_office_background' already exists, renamed to 'extract_office_background_scripts_dungeon_generator_backgrounds'
+Resource name collision 'extract_legacy_background' already exists, renamed to 'extract_legacy_background_scripts_dungeon_generator_backgrounds'
+!!! Font font0 uses a font (DejaVu Serif) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font0\font0.gms1.png
+Converting GML script: ${project_dir}\objects\obj_level_title\Draw_64.gml
+Converted builtin - line 16: view_wview[view_current] -> __view_get( e__VW.WView, view_current )
+Converted builtin - line 16: view_hview[view_current] -> __view_get( e__VW.HView, view_current )
+Converted builtin - line 10: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 11: view_hport[view_current] -> __view_get( e__VW.HPort, view_current )
+
+Added compatibility script 'action/action_color.gml'
+Added compatibility script 'action/action_effect.gml'
+Added compatibility script 'action/action_end_game.gml'
+Added compatibility script 'action/action_font.gml'
+Added compatibility script 'action/action_if_variable.gml'
+Added compatibility script 'action/action_kill_object.gml'
+Added compatibility script 'action/action_next_room.gml'
+Added compatibility script 'action/action_restart_game.gml'
+Added compatibility script 'action/action_set_alarm.gml'
+Added compatibility script 'action/action_set_relative.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'tile/tile_add.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
