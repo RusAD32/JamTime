@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oCollidable",
     "eventList": [
-        
+        {
+            "id": "c0cbafca-6ad7-434b-a94d-d00c0074373f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "968e54de-b0e9-4831-b563-55a9bf6fe491"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -25,5 +34,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "544c70e5-3fcb-4f93-8896-c1d29ca29043",
-    "visible": true
+    "visible": false
 }
