@@ -6,12 +6,12 @@ difficulty = oLevelGenerator.level_number;
 init_x = x;
 init_y = y;
 
-max_speed = round(random_range(1, 4));
+max_speed = round(random_range(2, 10));
 var i = difficulty - 1;
 repeat(difficulty) {
 	show_debug_message([x, y])
 	// choosing vectors to build path from
-	var vec_r = random_range(100, 200);
+	var vec_r = random_range(200, 1000);
 	var vec_phi = random(2*pi);
 	show_debug_message(vec_phi);
 	var vec_x = cos(vec_phi) * vec_r;
