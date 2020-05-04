@@ -1,6 +1,5 @@
 /// @description init player
-event_inherited();
-polygon = polygon_from_instance(id);
+
 // variables for movement
 max_speed = 7;
 
@@ -25,4 +24,4 @@ w = display_get_gui_width();
 h = display_get_gui_height();
 
 deactivaion_offset = 1000;
-tick = 0;
+show_debug_message("Я родился!")

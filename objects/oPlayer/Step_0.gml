@@ -132,5 +132,3 @@ if y + vspd < 0 || y + vspd > room_height {
 x += hspd;
 y += vspd;
 
-
-polygon = polygon_from_instance(id);
