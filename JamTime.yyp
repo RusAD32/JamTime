@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "225936b7-3ac1-46e1-a0d1-2b997e26d057",
+            "Value": {
+                "id": "d3832d88-dae0-42c7-9b24-68680c7077d1",
+                "resourcePath": "sprites\\sEnemyAggro\\sEnemyAggro.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23921c7f-0bd3-42f1-9417-05ea65915789",
             "Value": {
                 "id": "e70a52e9-552b-477a-b141-5c93f723c273",
@@ -231,6 +239,14 @@
             }
         },
         {
+            "Key": "77586754-7212-4ef9-92a7-82587479a6d5",
+            "Value": {
+                "id": "94f109be-bb94-4257-9b15-6485d138b30c",
+                "resourcePath": "objects\\oEnemyAggro\\oEnemyAggro.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7791ad93-cf67-4592-86aa-5e05ade1b554",
             "Value": {
                 "id": "514777fb-3dd1-4ddc-8ce7-91bd3ea05a78",
@@ -298,7 +314,7 @@
             "Key": "8ee1678a-2dc3-4ed0-95c4-e25b93d85cea",
             "Value": {
                 "id": "82a947fa-bb0a-4507-9bfe-c0e4a1ddc08e",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourcePath": "sprites\\sEnemyShooter\\sEnemyShooter.yy",
                 "resourceType": "GMSprite"
             }
         },

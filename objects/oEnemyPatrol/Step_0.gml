@@ -2,6 +2,13 @@
 // You can write your code in this editor
 if cur_wait > 0 {
 	cur_wait--; 
+	if cur_wait == 0 {
+		cur_vec++;
+		if cur_vec > difficulty {
+			cur_vec = 0;	
+		}
+		dist_left = vectors[cur_vec, 0];	
+	}
 	exit;
 }
 
@@ -19,10 +26,5 @@ y += vspd;
 
 dist_left -= cur_spd;
 if dist_left == 0 {
-	cur_vec++;
-	if cur_vec > difficulty {
-		cur_vec = 0;	
-	}
-	dist_left = vectors[cur_vec, 0];
 	cur_wait = wait_time;
 }

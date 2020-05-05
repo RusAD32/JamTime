@@ -17,9 +17,9 @@ var padding     = argument4;
 
 
 // Set up some constants
-var FLOOR       = -5;
-var WALL        = -6;
-var VOID        = -7;
+FLOOR       = -5;
+WALL        = -6;
+VOID        = -7;
 
 
 
@@ -174,16 +174,3 @@ for (var yy = 0; yy < height; yy++) {
     }
 }
 
-
-for (var yy = 0; yy < height; yy++) {
-    for (var xx = 0; xx < width; xx++) {
-		if (ds_grid_get(grid, xx, yy) == FLOOR) { 
-			if not collision_circle(xx*cellsize, yy*cellsize, 100,oCollidable,false,false) &&
-				not collision_circle(xx*cellsize, yy*cellsize, 100,oEnemyPatrol,false,false) &&
-				not collision_circle(xx*cellsize, yy*cellsize, 1000,oPlayer,false,false) &&
-				irandom(100) == 1 {
-				instance_create_depth(xx*cellsize, yy*cellsize, -10, oEnemyPatrol)
-			}
-		}
-	}
-}

@@ -14,8 +14,14 @@ key_up = keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"));
 key_attack = mouse_check_button(mb_left) || keyboard_check(vk_space) ||
 	gamepad_button_check(0, gp_face3) || gamepad_button_check(0, gp_shoulderr);
-// key_dash = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1);
+key_dash = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1);
 // key_throw = mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderl) || gamepad_button_check(0, gp_face4);
+
+if key_dash {
+	var cur_spd = max_speed;
+} else {
+	var cur_spd = ceil(max_speed *2 / 3); 	
+}
 
 //checking for controller connected
 if (gamepad_is_connected(0)) {
@@ -62,13 +68,13 @@ if (cur_vert != 0 || cur_hor != 0) {
 }
 
 if (move_normalized_hor != 0) {
-	hspd = sign(move_normalized_hor) * min(max_speed * abs(move_normalized_hor), abs(hspd) + accel*abs(move_normalized_hor));
+	hspd = sign(move_normalized_hor) * min(cur_spd * abs(move_normalized_hor), abs(hspd) + accel*abs(move_normalized_hor));
 } else {
 	hspd = sign(hspd) * max(0, abs(hspd) - decel);
 }
 
 if (move_normalized_vert != 0) {
-	vspd = sign(move_normalized_vert) * min(max_speed * abs(move_normalized_vert), abs(vspd) + accel*abs(move_normalized_vert));
+	vspd = sign(move_normalized_vert) * min(cur_spd * abs(move_normalized_vert), abs(vspd) + accel*abs(move_normalized_vert));
 } else {
 	vspd = sign(vspd) * max(0, abs(vspd) - decel);
 }
@@ -112,8 +118,8 @@ if x + hspd < 0 || x + hspd > room_width{
 	hspd = 0	
 } 
 //vertical
-if place_meeting(x+hspd, y + vspd, oCollidable) {
-	while ! place_meeting(x+hspd, y + sign(vspd), oCollidable) {
+if place_meeting(x, y + vspd, oCollidable) {
+	while ! place_meeting(x, y + sign(vspd), oCollidable) {
 		y += sign(vspd);
 	} 
 	vspd = 0;

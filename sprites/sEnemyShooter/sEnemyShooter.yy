@@ -2,7 +2,7 @@
     "id": "8ee1678a-2dc3-4ed0-95c4-e25b93d85cea",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_player",
+    "name": "sEnemyShooter",
     "For3D": false,
     "HTile": false,
     "VTile": false,

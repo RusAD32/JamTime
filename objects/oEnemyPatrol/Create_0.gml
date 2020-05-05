@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-difficulty = oLevelGenerator.level_number;
+difficulty = 1; // oLevelGenerator.level_number;
 
 init_x = x;
 init_y = y;

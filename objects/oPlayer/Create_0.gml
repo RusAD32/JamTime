@@ -1,7 +1,7 @@
 /// @description init player
 
 // variables for movement
-max_speed = 7;
+max_speed = 10;
 
 hspd = 0;
 vspd = 0;
