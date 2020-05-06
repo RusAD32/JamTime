@@ -71,5 +71,4 @@ switch cur_state {
 		}
 		break;
 	}
-	
 }

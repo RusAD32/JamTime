@@ -108,8 +108,8 @@ repeat(rooms) {
     }
 
     // Make a new room
-	var cur_room_size_x = roomsize - irandom(roomsize/2);
-	var cur_room_size_y = roomsize - irandom(roomsize/2);
+	var cur_room_size_x = irandom_range(hallwaysize+1, roomsize);
+	var cur_room_size_y = irandom_range(hallwaysize+1, roomsize);
     for (var xx = -(cur_room_size_x / 2); xx < (cur_room_size_x / 2); xx++) {
         for (var yy = -(cur_room_size_y / 2); yy < (cur_room_size_y / 2); yy++) {
             ds_grid_set(grid, cx + xx, cy + yy, FLOOR);

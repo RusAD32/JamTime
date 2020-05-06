@@ -79,6 +79,10 @@ if (move_normalized_vert != 0) {
 	vspd = sign(vspd) * max(0, abs(vspd) - decel);
 }
 
+if hspd != 0 || vspd != 0 {
+	look_angle = cartesianToPolar(vspd, hspd) * 180 / pi;
+}
+
 // converting speed to integer while storing the fractions for later
 // initial fractions are 0
 vspd += vspd_fraction;
@@ -90,22 +94,7 @@ hspd -= hspd_fraction;
 
 // calculating collision
 
-if place_meeting(x, y, oCollidable) {
-	var col = instance_place(x, y, oCollidable);
-	var x_dir = sign(x - col.x);
-	if x_dir > 0 {
-		x += col.bbox_right - bbox_left;
-	} else if x_dir < 0 {
-		x -= bbox_right - col.bbox_left;
-	} else {
-		var y_dir = sign(y - col.y);
-		if y_dir > 0 {
-			y += col.bbox_bottom - bbox_top;
-		} else {
-			y -= bbox_bottom - col.bbox_top;
-		}
-	}
-}
+
 //horizontal
 if place_meeting(x + hspd, y, oCollidable) {
 	while ! (place_meeting(x + sign(hspd), y, oCollidable)) {
@@ -137,4 +126,3 @@ if y + vspd < 0 || y + vspd > room_height {
 
 x += hspd;
 y += vspd;
-

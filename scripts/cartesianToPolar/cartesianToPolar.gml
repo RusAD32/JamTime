@@ -1,6 +1,3 @@
-show_debug_message(argument0);
-show_debug_message(argument1);
-
 var ang_x = argument0;
 var ang_y = argument1;
 var r = sqrt(sqr(ang_x) + sqr(ang_y));

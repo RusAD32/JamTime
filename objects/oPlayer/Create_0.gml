@@ -8,8 +8,8 @@ vspd = 0;
 vspd_fraction = 0;
 hspd_fraction = 0;
 
-accel = 3;
-decel = 2;
+accel = 2;
+decel = 1;
 
 controller = 0;
 
@@ -25,3 +25,8 @@ h = display_get_gui_height();
 
 deactivaion_offset = 1000;
 show_debug_message("Я родился!")
+
+time_left = 1*60*60 // 1 minute
+look_angle = 0;
+
+iframes = 0;

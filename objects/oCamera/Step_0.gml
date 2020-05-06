@@ -2,14 +2,14 @@
 
 // destination
 if instance_exists(follow) {
-	x_to = follow.x;
-	y_to = follow.y;
+	x_to = follow.x + follow.hspd * 50;
+	y_to = follow.y + follow.vspd * 50;
 }
 
 //movement
 
-x += (x_to - x) / 20;
-y += (y_to - y) / 20;
+x += (x_to - x) / 30;
+y += (y_to - y) / 30;
 
 x = clamp(x, view_w_half + buff, room_width - view_w_half -buff)
 y = clamp(y, view_h_half + buff, room_height - view_h_half - buff)
