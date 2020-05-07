@@ -6,13 +6,18 @@ difficulty = 1; // oLevelGenerator.level_number;
 init_x = x;
 init_y = y;
 
-max_speed = round(random_range(2, 10));
+max_speed = round(random_range(speed_min, speed_max));
 var i = difficulty - 1;
 repeat(difficulty) {
 	//show_debug_message([x, y])
 	// choosing vectors to build path from
-	var vec_r = random_range(200, 1000);
+	var vec_r = random_range(path_len_min, path_len_max);
+	var walls = ds_list_create();
+	var walls_cnt = collision_circle_list(x,y,path_len_min,oCollidable, false, false, walls, true);
 	var vec_phi = random(2*pi);
+	while walls_cnt > 0 && abs(vec_phi - cartesianToPolar(walls[|0].x - x, walls[| 0].y - y)) < pi/2 {
+		var vec_phi = random(2*pi);	
+	}
 	//show_debug_message(vec_phi);
 	var vec_x = cos(vec_phi) * vec_r;
 	var vec_y = sin(vec_phi) * vec_r;
@@ -84,7 +89,6 @@ y = init_y;
 cur_vec = 0;
 dist_left = vectors[cur_vec, 0];
 
-wait_time = round(random(180)); // frames
+wait_time = round(irandom_range(wait_time_min, wait_time_max)); // frames
 cur_wait = 0;
 
-show_debug_message(vectors);

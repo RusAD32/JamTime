@@ -14,7 +14,7 @@ key_up = keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"));
 key_attack = mouse_check_button(mb_left) || keyboard_check(vk_space) ||
 	gamepad_button_check(0, gp_face3) || gamepad_button_check(0, gp_shoulderr);
-key_dash = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1);
+key_dash = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1) || gamepad_button_check(0, gp_stickl);
 // key_throw = mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderl) || gamepad_button_check(0, gp_face4);
 
 if key_dash {
@@ -79,9 +79,6 @@ if (move_normalized_vert != 0) {
 	vspd = sign(vspd) * max(0, abs(vspd) - decel);
 }
 
-if hspd != 0 || vspd != 0 {
-	look_angle = cartesianToPolar(vspd, hspd) * 180 / pi;
-}
 
 // converting speed to integer while storing the fractions for later
 // initial fractions are 0
@@ -126,3 +123,12 @@ if y + vspd < 0 || y + vspd > room_height {
 
 x += hspd;
 y += vspd;
+
+if controller {
+	var look_at_x = gamepad_axis_value(0, gp_axisrh)
+	var look_at_y = gamepad_axis_value(0, gp_axisrv)
+} else {
+	var look_at_x = mouse_x - x
+	var look_at_y = mouse_y - y
+}
+look_angle = 90 - cartesianToPolar(look_at_x, look_at_y) * 180 / pi;

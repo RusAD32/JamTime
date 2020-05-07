@@ -13,7 +13,7 @@ draw_set_halign(fa_center);
 draw_set_font(fnt_dungeonname);
 
 
-
+/*
 // Draw Text
 draw_set_halign(fa_center)
 draw_text(360,50,string_hash_to_newline("Press [Space] for new dungeon"));
@@ -63,3 +63,4 @@ if (maptype = 4) {
 draw_set_halign(fa_center)
 draw_text(360,600,string_hash_to_newline("Warning: When the dungeon hits the end of the grid#it gets mashed up against the edge and can#throw offthe way the grid dungeon# is created."));
 
+*/

@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "7870c73d-a6ef-48d9-bf87-22e8802e46bf",
+            "Value": {
+                "id": "78e508a5-0b1e-4403-9163-a50574df39c9",
+                "resourcePath": "sprites\\sEnemyShy\\sEnemyShy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7872a643-fb97-4d15-8000-f6afb545b4ea",
             "Value": {
                 "id": "ab5642f6-b2ec-4fc4-ad7e-708c579bf34d",
@@ -364,6 +372,14 @@
                 "id": "61c646f2-641d-4e4c-8cc4-ee32a106350e",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "addff24c-883e-42ee-9a43-170fd9a112b7",
+            "Value": {
+                "id": "70073222-7410-41e5-8749-be44fb45a0b1",
+                "resourcePath": "objects\\oEnemyShy\\oEnemyShy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -500,6 +516,14 @@
                 "id": "e29d63ae-83cf-4a7a-898f-1ab58628f13a",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f47533d1-8d72-4eec-9c78-f75f5c8ca82f",
+            "Value": {
+                "id": "272f0a1d-4f2d-4f33-ab56-a24290d2cfff",
+                "resourcePath": "rooms\\rm_glow\\rm_glow.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

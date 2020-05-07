@@ -4,11 +4,9 @@
 randomize()
 // Inherit the parent event
 event_inherited();
-max_speed = round(random_range(2, 6));
-view_cone_angle = random_range(pi/4, pi/2);
-view_cone_length = irandom_range(100, 300);
-chase_r = irandom_range(view_cone_length, view_cone_length+300);
-on_path = true;
+view_cone_angle = random_range(view_cone_angle_min, view_cone_angle_max);
+view_cone_length = irandom_range(view_cone_length_min, view_cone_length_max);
+chase_r = irandom_range(view_cone_length, view_cone_length+chase_r_offset_max);
 enum FOLLOW_STATE {
 	on_path,
 	chasing,

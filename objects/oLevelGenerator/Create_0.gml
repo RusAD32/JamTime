@@ -20,19 +20,21 @@ maptype = 0;
 // CREATE DUNGEON
 scr_create_dungeon3(cellsize, rooms, roomsizeaverage, hallwaysize, padding);
 
+var dist_between_enemies = 1000 / level_number 
 // spawn objects in this dungeon
 var width = (room_width div cellsize);
 var height = (room_height div cellsize);
 for (var yy = 0; yy < height; yy++) {
     for (var xx = 0; xx < width; xx++) {
 		if (ds_grid_get(grid, xx, yy) == FLOOR) { 
-			if not collision_circle(xx*cellsize, yy*cellsize, 50,oCollidable,false,false) &&
-				  not collision_circle(xx*cellsize, yy*cellsize, 100,oEnemyPatrol,false,false) &&
+			if not collision_circle(xx*cellsize, yy*cellsize, dist_between_enemies,oEnemyPatrol,false,false) &&
 				  not collision_circle(xx*cellsize, yy*cellsize, 500,oPlayer,false,false) {
 				if irandom(100) == 1 {
-					instance_create_depth(xx*cellsize, yy*cellsize, -10, oEnemyPatrol)
+					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyPatrol)
 				} else if irandom(200) == 1 {
-					instance_create_depth(xx*cellsize, yy*cellsize, -10, oEnemyAggro)
+					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyAggro)
+				} else if irandom(300) == 1 {
+					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyShy)
 				}
 			}
 		}

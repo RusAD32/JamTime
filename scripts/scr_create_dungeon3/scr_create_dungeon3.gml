@@ -22,8 +22,6 @@ WALL        = -6;
 VOID        = -7;
 
 
-
-
 // Set Grid width and height
 var width = (room_width div cellsize);
 var height = (room_height div cellsize);
@@ -42,7 +40,14 @@ var cx = (width div 2);
 var cy = (height div 2);
 
 // Create the player
-instance_create(cx * cellsize + 16, cy * cellsize + 16, oPlayer);
+if not instance_exists(oPlayer) {
+	instance_create(cx * cellsize + cellsize/2, cy * cellsize + cellsize/2, oPlayer);
+} else {
+	with oPlayer {
+		x = cx * cellsize + cellsize/2;
+		y = cy * cellsize + cellsize/2;
+	}
+}
 
 // Give controller random direction
 var cdir = irandom(3);

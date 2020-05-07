@@ -6,6 +6,6 @@ if iframes == 0 {
 	//y += sign(y - other.y) * 5;
 	hspd += sign(x - other.x) * 5;
 	vspd += sign(y - other.y) * 5;
-	screenshake(10, 30);
+	screenshake(10, 30, 0.7);
 	iframes = 60;
 }

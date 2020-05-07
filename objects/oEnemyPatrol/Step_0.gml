@@ -21,6 +21,20 @@ if dist_left < max_speed {
 hspd = cos(vectors[cur_vec, 1]) * cur_spd;
 vspd = sin(vectors[cur_vec, 1]) * cur_spd;
 
+if place_meeting(x + hspd, y, oCollidable) {
+	while ! (place_meeting(x + sign(hspd), y, oCollidable)) {
+		x += sign(hspd);
+	} 
+	hspd = 0;
+}
+//vertical
+if place_meeting(x, y + vspd, oCollidable) {
+	while ! place_meeting(x, y + sign(vspd), oCollidable) {
+		y += sign(vspd);
+	} 
+	vspd = 0;
+}
+
 x += hspd;
 y += vspd;
 
