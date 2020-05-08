@@ -11,5 +11,6 @@ if neighbour and neighbour.sprite_width == sprite_width {
 	neighbour.image_yscale++;
 	instance_destroy(self);
 }
+depth = -y;
 
 

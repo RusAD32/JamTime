@@ -33,6 +33,8 @@ for (var yy = 0; yy < height; yy++) {
 					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyPatrol)
 				} else if irandom(200) == 1 {
 					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyAggro)
+				}else if irandom(200) == 1 {
+					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyShooter)
 				} else if irandom(300) == 1 {
 					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyShy)
 				}

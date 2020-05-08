@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0424ceb3-1121-4598-a29c-ad5dbf80cc81",
+            "Value": {
+                "id": "fdb39786-5eeb-42d6-bd66-a9085d0bf9c4",
+                "resourcePath": "sprites\\sEnemyProjectile\\sEnemyProjectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a1a1338-fc0d-411e-a2b7-74214d39b0f8",
             "Value": {
                 "id": "e6bf6085-c140-42d9-8f97-ecc88b996de9",
@@ -60,6 +68,14 @@
                 "id": "befe91e9-1883-4ea3-803f-2c47d8d6f42d",
                 "resourcePath": "scripts\\transition\\transition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0d0592e4-b382-46e1-85be-e47b3979fa4a",
+            "Value": {
+                "id": "3177e708-7fd0-4734-8dbd-e08f8a59f8a9",
+                "resourcePath": "objects\\oEnemyProjectile\\oEnemyProjectile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -111,6 +127,14 @@
             }
         },
         {
+            "Key": "4469469e-f43c-4180-ac18-1f103925a93a",
+            "Value": {
+                "id": "9d654451-a213-43fe-a605-da4613d79c2a",
+                "resourcePath": "objects\\oEnemyShooter\\oEnemyShooter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4716f22f-3dfa-4034-865d-ae175f2ace06",
             "Value": {
                 "id": "b0210dbc-8bf7-4edb-806a-a8d4e935adbd",
@@ -132,6 +156,14 @@
                 "id": "97898421-d100-4fa6-a98e-772be873c2e8",
                 "resourcePath": "scripts\\scr_create_dungeon3\\scr_create_dungeon3.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4d926f10-0c7a-4519-94e9-cf117a8778d3",
+            "Value": {
+                "id": "9ede6b3a-6728-4c7d-9bb7-2e831d13dce5",
+                "resourcePath": "views\\4d926f10-0c7a-4519-94e9-cf117a8778d3.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
