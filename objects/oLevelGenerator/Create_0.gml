@@ -20,7 +20,7 @@ maptype = 0;
 // CREATE DUNGEON
 scr_create_dungeon3(cellsize, rooms, roomsizeaverage, hallwaysize, padding);
 
-var dist_between_enemies = 1000 / level_number 
+var dist_between_enemies = 2000 / level_number;
 // spawn objects in this dungeon
 var width = (room_width div cellsize);
 var height = (room_height div cellsize);
@@ -37,7 +37,27 @@ for (var yy = 0; yy < height; yy++) {
 					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyShooter)
 				} else if irandom(300) == 1 {
 					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyShy)
-				}
+				} 
+			}
+			
+			if irandom(100) == 1 && not collision_circle(xx*cellsize, yy*cellsize, 100 ,oPlayer,false,false){
+				instance_create_depth(xx*cellsize, yy*cellsize, -10, oSpikeFloor);
+			}
+		} else if ds_grid_get(grid, xx, yy) == WALL {
+			var angle = 0;
+			if ds_grid_get(grid, xx, yy-1) == FLOOR {
+				angle = 90;	
+			} else if ds_grid_get(grid, xx-1, yy) == FLOOR {
+				angle = 180;
+			} else if ds_grid_get(grid, xx, yy+1) == FLOOR {
+				angle = 270;	
+			}
+			if irandom(100) = 1 {
+				var fwall = instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oWallFlame);
+				fwall.image_angle = angle;
+			} else if irandom(100) = 1 {
+				var fwall = instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oWallArrows);
+				fwall.image_angle = angle;
 			}
 		}
 	}

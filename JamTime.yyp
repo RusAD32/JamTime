@@ -79,10 +79,26 @@
             }
         },
         {
+            "Key": "0e0c39ad-f8ed-416e-81f2-e71376bc1c8c",
+            "Value": {
+                "id": "fe09c841-7fdf-44bb-8cea-cd31f5f9b6b2",
+                "resourcePath": "objects\\oWallFlame\\oWallFlame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "16894ba2-f1a3-4fae-9f43-7374dbac6c05",
             "Value": {
                 "id": "a07d5f2f-4caa-45f8-920e-a6e30c713f0b",
                 "resourcePath": "views\\16894ba2-f1a3-4fae-9f43-7374dbac6c05.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "186355de-2a1e-4418-8965-b15b13852f7a",
+            "Value": {
+                "id": "ed6013b8-7758-429a-87b2-4097d05332a3",
+                "resourcePath": "views\\186355de-2a1e-4418-8965-b15b13852f7a.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -107,6 +123,14 @@
             "Value": {
                 "id": "d3832d88-dae0-42c7-9b24-68680c7077d1",
                 "resourcePath": "sprites\\sEnemyAggro\\sEnemyAggro.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2383bbb9-4e77-48bf-a752-1770acb46cda",
+            "Value": {
+                "id": "3450b329-9106-41f5-afae-193480e9fbda",
+                "resourcePath": "sprites\\sArrow\\sArrow.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -156,6 +180,14 @@
                 "id": "97898421-d100-4fa6-a98e-772be873c2e8",
                 "resourcePath": "scripts\\scr_create_dungeon3\\scr_create_dungeon3.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4bf125ea-66a8-434b-8312-097411e2b8ed",
+            "Value": {
+                "id": "9542ad66-d2e4-46cb-ba76-402718af4f2e",
+                "resourcePath": "sprites\\sSpikeFloor\\sSpikeFloor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -215,6 +247,14 @@
             }
         },
         {
+            "Key": "5eed7af3-f4fb-46e0-a4af-5b30a14dadff",
+            "Value": {
+                "id": "0c9ddb23-8583-4647-996d-3560081b0cfa",
+                "resourcePath": "sprites\\sFireTower\\sFireTower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "66da56f5-588d-41a9-80b9-f74f2acf2cb1",
             "Value": {
                 "id": "aa032891-97c7-4cfa-bdd3-052c2e5c3586",
@@ -259,6 +299,14 @@
             "Value": {
                 "id": "ff839cb8-4a52-4fff-a939-a04d5d7705a3",
                 "resourcePath": "views\\74d4154a-3b68-400d-97da-797255ff8368.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "753a29d2-25f3-4c94-a373-4c226dbfa4d5",
+            "Value": {
+                "id": "a0a14fe4-340b-4782-9ccc-0e1eff548329",
+                "resourcePath": "views\\753a29d2-25f3-4c94-a373-4c226dbfa4d5.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -343,6 +391,14 @@
             }
         },
         {
+            "Key": "89527dc8-4524-4d31-9cf8-632257de9e4c",
+            "Value": {
+                "id": "7476138d-7019-43ad-90c3-27f6d31d4f9a",
+                "resourcePath": "sprites\\sArrowTower\\sArrowTower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8d0d796d-feab-4e74-8e8e-4ba99543e303",
             "Value": {
                 "id": "17847175-85c3-4933-bff9-1400d93955b5",
@@ -355,6 +411,14 @@
             "Value": {
                 "id": "82a947fa-bb0a-4507-9bfe-c0e4a1ddc08e",
                 "resourcePath": "sprites\\sEnemyShooter\\sEnemyShooter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "930d6489-f8b2-4242-ae61-92c320471360",
+            "Value": {
+                "id": "54849d0e-26b7-48db-988b-eb454882eeae",
+                "resourcePath": "sprites\\sFIre\\sFIre.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -372,6 +436,14 @@
                 "id": "1171df33-4cc8-4695-8004-c1ccb6c0a3e4",
                 "resourcePath": "views\\96c3592c-3c7f-4a20-b651-975fdb7f1da0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a214cb50-513d-41ce-9ba0-7bf37e0ac0ad",
+            "Value": {
+                "id": "c47501fa-e3b9-4c39-89d9-9a0a55dc3d10",
+                "resourcePath": "objects\\oWallArrows\\oWallArrows.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -471,6 +543,14 @@
             }
         },
         {
+            "Key": "c4ec3d42-d931-4d98-a463-949a26d1d3d7",
+            "Value": {
+                "id": "49dfe784-81b3-4e46-9409-2c7affce0296",
+                "resourcePath": "objects\\oFlame\\oFlame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c7825d6e-a631-4a4a-83e2-b1618c02c23c",
             "Value": {
                 "id": "cebd12f5-e742-49b5-b0fb-f51a5b19098e",
@@ -535,11 +615,27 @@
             }
         },
         {
+            "Key": "e20dbcb4-2ce3-4308-a39a-8af918f6dfa1",
+            "Value": {
+                "id": "a6830676-0f30-4cb8-8c25-1c9d84387c0b",
+                "resourcePath": "objects\\oSpikeFloor\\oSpikeFloor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f2db47f3-c2c0-415d-93d0-ae51a26939eb",
             "Value": {
                 "id": "f5f28c09-5525-4987-a97d-32a94ee8c715",
                 "resourcePath": "views\\f2db47f3-c2c0-415d-93d0-ae51a26939eb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f402932f-6c92-4f39-b431-8daac3ed85fd",
+            "Value": {
+                "id": "36e80f35-93ff-46dc-995d-1647500b360e",
+                "resourcePath": "objects\\oArrow\\oArrow.yy",
+                "resourceType": "GMObject"
             }
         },
         {

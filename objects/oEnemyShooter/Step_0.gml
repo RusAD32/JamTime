@@ -22,7 +22,7 @@ switch cur_state {
 	case SHOOTING_STATE.shooting: {	
 		if shoot_wait_left == 0 {
 			look_dir = cartesianToPolar(follow.x - x, follow.y - y);
-			var proj = instance_create(x, y, oEnemyProjectile);
+			var proj = instance_create_depth(x, y, -y, oEnemyProjectile);
 			proj.spd = proj_speed;
 			proj.angle = look_dir;
 			shoot_wait_left = shoot_pause;
