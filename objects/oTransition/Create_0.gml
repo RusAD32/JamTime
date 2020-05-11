@@ -20,6 +20,3 @@ mode = TRANS_MODE.INTRO;
 percent = 1;
 target = room;
 
-target_x = 0;
-target_y = 0;
-

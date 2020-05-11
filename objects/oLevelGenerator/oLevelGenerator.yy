@@ -5,13 +5,13 @@
     "name": "oLevelGenerator",
     "eventList": [
         {
-            "id": "b55297ec-5ba5-422f-825a-30b284148a41",
+            "id": "9626a433-534d-44d3-8180-4268fc92bc65",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
+            "enumb": 4,
+            "eventtype": 7,
             "m_owner": "5ed9458d-062a-4de5-b08e-cb1c6fe6e325"
         }
     ],

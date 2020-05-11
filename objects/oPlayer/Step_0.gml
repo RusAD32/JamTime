@@ -14,10 +14,12 @@ key_up = keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"));
 key_attack = mouse_check_button(mb_left) || keyboard_check(vk_space) ||
 	gamepad_button_check(0, gp_face3) || gamepad_button_check(0, gp_shoulderr);
-key_dash = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1) || gamepad_button_check(0, gp_stickl);
+key_sprint = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1) || gamepad_button_check(0, gp_stickl);
+key_dash = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_shoulderr) || gamepad_button_check_pressed(0, gp_face2);
 // key_throw = mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderl) || gamepad_button_check(0, gp_face4);
 
-if key_dash {
+
+if key_sprint && sprint_frames_left > 0 {
 	var cur_spd = max_speed;
 } else {
 	var cur_spd = ceil(max_speed *2 / 3); 	
@@ -59,6 +61,7 @@ var move_vector_len = max(1, move_vector_len_total);
 var move_normalized_vert = move_vert / move_vector_len;
 var move_normalized_hor = move_hor / move_vector_len;
 
+
 //calculating last direction to choose the correct sprite
 var cur_vert = sign(move_vert);
 var cur_hor = sign(move_hor);
@@ -67,13 +70,13 @@ if (cur_vert != 0 || cur_hor != 0) {
 	left = cur_hor;
 }
 
-if (move_normalized_hor != 0) {
+if (move_normalized_hor != 0) || dash_frames > 0 {
 	hspd = sign(move_normalized_hor) * min(cur_spd * abs(move_normalized_hor), abs(hspd) + accel*abs(move_normalized_hor));
 } else {
 	hspd = sign(hspd) * max(0, abs(hspd) - decel);
 }
 
-if (move_normalized_vert != 0) {
+if (move_normalized_vert != 0) || dash_frames > 0  {
 	vspd = sign(move_normalized_vert) * min(cur_spd * abs(move_normalized_vert), abs(vspd) + accel*abs(move_normalized_vert));
 } else {
 	vspd = sign(vspd) * max(0, abs(vspd) - decel);
@@ -90,7 +93,9 @@ hspd_fraction = hspd - sign(hspd) * floor(abs(hspd));
 hspd -= hspd_fraction;
 
 // calculating collision
-
+if (move_vert != 0 || move_hor != 0) && key_sprint {
+	sprint_frames_left = max(0, sprint_frames_left-1);	
+}
 
 //horizontal
 if place_meeting(x + hspd, y, oCollidable) {
@@ -120,6 +125,7 @@ if y + vspd < 0 || y + vspd > room_height {
 * applying the calculated velocity
 *
 */
+
 
 x += hspd;
 y += vspd;

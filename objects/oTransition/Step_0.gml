@@ -16,22 +16,11 @@ if mode != TRANS_MODE.OFF {
 			case TRANS_MODE.NEXT: {
 				mode = TRANS_MODE.INTRO;
 				room_goto_next();
-				with (oPlayer) {
-					// tileset = layer_tilemap_get_id("Collision");
-					x = other.target_x;
-					y = other.target_y;
-				}
 				break;
 			}
 			case TRANS_MODE.GOTO: {
 				mode = TRANS_MODE.INTRO;
 				room_goto(target);
-				with (oPlayer) {
-					// tileset = layer_tilemap_get_id("Collision");
-					x = other.target_x;
-					y = other.target_y;
-					
-				}
 				break;
 			}
 			case TRANS_MODE.RESTART: {

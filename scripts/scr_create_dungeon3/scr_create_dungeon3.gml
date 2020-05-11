@@ -120,6 +120,9 @@ repeat(rooms) {
             ds_grid_set(grid, cx + xx, cy + yy, FLOOR);
         }
     }
+	if makehallway == 0 {
+		instance_create_depth(cx*cellsize, cy*cellsize, -cy*cellsize, oNextLevel);
+	}
     
     
     // Move controller

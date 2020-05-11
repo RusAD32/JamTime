@@ -9,8 +9,4 @@ with (oTransition) {
 	if (argument_count > 1) {
 		target = argument1;
 	}
-	if (argument_count > 3) {
-		target_x = argument2;
-		target_y = argument3;
-	}
 }
