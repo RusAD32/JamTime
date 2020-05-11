@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if oPlayer.time_stop_time_left > 0 {
+	exit;	
+}
 if place_meeting(x, y, oPlayer) {
 	var agree = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderlb);
 	var disagree = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(0, gp_shoulderrb);

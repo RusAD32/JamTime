@@ -15,7 +15,8 @@ key_down = keyboard_check(ord("S"));
 key_attack = mouse_check_button(mb_left) || keyboard_check(vk_space) ||
 	gamepad_button_check(0, gp_face3) || gamepad_button_check(0, gp_shoulderr);
 key_sprint = keyboard_check(vk_lshift) || gamepad_button_check(0, gp_face1) || gamepad_button_check(0, gp_stickl);
-key_dash = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_shoulderr) || gamepad_button_check_pressed(0, gp_face2);
+key_time_stop = keyboard_check_pressed(ord("E")) || gamepad_button_check_pressed(0, gp_shoulderr)
+key_invis = keyboard_check_pressed(ord("Q")) || gamepad_button_check_pressed(0, gp_shoulderl)
 // key_throw = mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderl) || gamepad_button_check(0, gp_face4);
 
 
@@ -23,6 +24,16 @@ if key_sprint && sprint_frames_left > 0 {
 	var cur_spd = max_speed;
 } else {
 	var cur_spd = ceil(max_speed *2 / 3); 	
+}
+
+if key_invis and invis_uses > 0 {
+	invis_uses--;
+	invis_time_left = invis_time_max;
+}
+
+if key_time_stop and time_stop_uses > 0 {
+	time_stop_uses--;
+	time_stop_time_left = time_stop_time_max;
 }
 
 //checking for controller connected
@@ -131,10 +142,14 @@ x += hspd;
 y += vspd;
 
 if controller {
-	var look_at_x = gamepad_axis_value(0, gp_axisrh)
-	var look_at_y = gamepad_axis_value(0, gp_axisrv)
+	if gamepad_axis_value(0, gp_axisrh) != 0 {
+		look_at_x = gamepad_axis_value(0, gp_axisrh)
+	}
+	if gamepad_axis_value(0, gp_axisrv) != 0 {
+		look_at_y = gamepad_axis_value(0, gp_axisrv)
+	}
 } else {
-	var look_at_x = mouse_x - x
-	var look_at_y = mouse_y - y
+	look_at_x = mouse_x - x
+	look_at_y = mouse_y - y
 }
 look_angle = 90 - cartesianToPolar(look_at_x, look_at_y) * 180 / pi;

@@ -2,8 +2,14 @@
 
 // destination
 if instance_exists(follow) 	{
-	x_to = follow.x + follow.hspd * 25 + (mouse_x - follow.x) / 3;
-	y_to = follow.y + follow.vspd * 25 + (mouse_y - follow.y) / 3;
+	if oPlayer.controller {
+		x_to = follow.x + follow.hspd * 25 + gamepad_axis_value(0, gp_axisrh) * 100;
+		y_to = follow.y + follow.vspd * 25 + gamepad_axis_value(0, gp_axisrv) * 100;
+		
+	} else {
+		x_to = follow.x + follow.hspd * 25 + (mouse_x - follow.x) / 3;
+		y_to = follow.y + follow.vspd * 25 + (mouse_y - follow.y) / 3;
+	}
 }
 
 //movement

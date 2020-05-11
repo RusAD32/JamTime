@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if oPlayer.time_stop_time_left > 0 {
+	exit;	
+}
 if time_left == 0 {
 	var x_off = sprite_width/2 * cos(image_angle*pi/180);
 	var y_off = -sprite_height/2 * sin(image_angle*pi/180);

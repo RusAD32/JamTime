@@ -1,4 +1,7 @@
-/// @description init player
+/// @description init 
+for (i = 0; i < 12; i++) {
+	show_debug_message(gamepad_is_connected(i))
+}
 
 // variables for movement
 max_speed = 10;
@@ -7,7 +10,8 @@ hspd = 0;
 vspd = 0;
 vspd_fraction = 0;
 hspd_fraction = 0;
-
+look_at_x = 0;
+look_at_y = 0;
 accel = 2;
 decel = 1;
 
@@ -39,5 +43,11 @@ sprint_frames_max = 10*60;
 
 shields = 0;
 defence = 1;
-time_stop_uses = 0;
-invis_uses = 0;
+time_stop_uses = 1;
+invis_uses = 1;
+
+time_stop_time_left = 0;
+time_stop_time_max = 3*60;
+
+invis_time_left = 0;
+invis_time_max = 5*60;
