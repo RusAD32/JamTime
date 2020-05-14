@@ -51,13 +51,3 @@ time_stop_time_max = 3*60;
 
 invis_time_left = 0;
 invis_time_max = 5*60;
-
-
-samp_glow_surface =   shader_get_sampler_index(shd_glow_map, "s_glow_surface");
-uni_glow_blur_sigma = shader_get_uniform(shd_glow_map, "u_glow_blur_sigma");
-uni_glow_resolution =   shader_get_uniform(shd_glow_map, "u_glow_resolution");
-glow_surface = surface_create(sprite_width*2, sprite_height*2);
-gpu_set_blendenable(true);
-
-var_sigma = 0;
-pulse_speed = 0.05;
