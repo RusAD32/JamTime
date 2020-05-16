@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01dfd1c9-3560-4243-8f34-154f20c77b64",
+            "Value": {
+                "id": "c228eb32-b05d-41dc-85a1-a9ebbdcffe65",
+                "resourcePath": "sounds\\sfxSpikeRelease\\sfxSpikeRelease.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "03bc42a1-e633-4777-acce-5de510ddfdb2",
             "Value": {
                 "id": "6032192e-6f85-4ebd-8f99-9169672169f8",
@@ -44,6 +52,14 @@
                 "id": "fdb39786-5eeb-42d6-bd66-a9085d0bf9c4",
                 "resourcePath": "sprites\\sEnemyProjectile\\sEnemyProjectile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "04d95608-005d-454d-af65-96efc9bfda8b",
+            "Value": {
+                "id": "4a6cb69a-9364-48cd-8fd4-07738dec132b",
+                "resourcePath": "sounds\\sfxSpikesEngage\\sfxSpikesEngage.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -271,6 +287,14 @@
             }
         },
         {
+            "Key": "6453960d-e877-4cea-9353-4b9f6d530920",
+            "Value": {
+                "id": "0e578af6-e68a-4d11-b3c9-c391e4bf087f",
+                "resourcePath": "sounds\\sfxFire\\sfxFire.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "66da56f5-588d-41a9-80b9-f74f2acf2cb1",
             "Value": {
                 "id": "aa032891-97c7-4cfa-bdd3-052c2e5c3586",
@@ -383,6 +407,14 @@
             }
         },
         {
+            "Key": "7e76c474-93fb-4685-800b-7324ff571752",
+            "Value": {
+                "id": "d4fc44de-6b87-4112-8883-c0456611c403",
+                "resourcePath": "sounds\\sfxArrowShoot\\sfxArrowShoot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "809ffa89-d997-4f15-bbfe-bb042cd53ee7",
             "Value": {
                 "id": "e1d8277d-8be0-4d72-8162-523758ae6963",
@@ -412,6 +444,14 @@
                 "id": "002bfed0-6a16-49b7-a421-5a82c17079b2",
                 "resourcePath": "views\\87654d9c-56d5-4c37-88f5-e0eac84afdc5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "891e034f-d054-42ed-907d-bb78c454f9c1",
+            "Value": {
+                "id": "8f5e8b20-4c0b-4920-aa7e-0dd5cb645447",
+                "resourcePath": "sounds\\sfxArrowWallHit\\sfxArrowWallHit.yy",
+                "resourceType": "GMSound"
             }
         },
         {

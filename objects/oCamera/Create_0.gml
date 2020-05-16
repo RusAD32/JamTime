@@ -1,6 +1,7 @@
 /// @description camera controls
 
 /// @description create camera
+audio_falloff_set_model(audio_falloff_inverse_distance_clamped);
 
 cam = view_camera[0];
 follow = oPlayer;
