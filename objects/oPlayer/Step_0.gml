@@ -5,6 +5,9 @@
 * Block of getting inputs, both from keyboard and controller
 *
 */
+if oTransition.mode != TRANS_MODE.OFF {
+	exit;	
+}
 
 
 //movement control on keyboard

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if oPlayer.time_stop_time_left > 0 {
+if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF {
 	exit;	
 }
 if place_meeting(x, y, oPlayer) {
@@ -10,22 +10,38 @@ if place_meeting(x, y, oPlayer) {
 		oPlayer.time_left -= 5*60;
 		if irandom(100) == 1 {
 			// POWERUPS.timeStop;
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "Time stop charge!\nPress E to use"
 			oPlayer.time_stop_uses++;
 		} else if irandom(100) == 1 {
 			// POWERUPS.invis;
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "Invisibility charge!\nPress Q to use"
 			oPlayer.invis_uses++;
 		} else if irandom(100) < 5 {
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "Speed up!"
 			oPlayer.max_speed++;
 		} else if irandom(100) < 5 {
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "Three shields!\n They'll protect you"
 			oPlayer.shields+=3;
 		} else if irandom(100) < 10 {
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "A shield!\nIt will protect you"
 			oPlayer.shields++;
 		} else if irandom(100) < 10 {
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "Stamina up!\n+1 second"
 			oPlayer.sprint_frames_max += 1*60;	
 			oPlayer.sprint_frames_left += 1*60;	
 		} else if irandom(100) < 15 {
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "Stamina restored!"
 			oPlayer.sprint_frames_left = oPlayer.sprint_frames_max;
 		} else {
+			var txt = instance_create_depth(x,y,-y, oTextStatic);
+			txt.text = "10 extra seconds!"
 			oPlayer.time_left += 10*60;	
 		}
 		instance_destroy(self);

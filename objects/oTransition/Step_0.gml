@@ -23,6 +23,11 @@ if mode != TRANS_MODE.OFF {
 				room_goto(target);
 				break;
 			}
+			case TRANS_MODE.RELOAD: {
+				mode = TRANS_MODE.INTRO;
+				room_restart();
+				break;
+			}
 			case TRANS_MODE.RESTART: {
 				game_restart();
 				break;

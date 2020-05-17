@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-if oPlayer.time_stop_time_left > 0 {
+if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF {
 	exit;	
 }
 switch cur_state {
@@ -29,7 +29,7 @@ switch cur_state {
 			proj.spd = proj_speed;
 			proj.angle = look_dir;
 			shoot_wait_left = shoot_pause;
-		} else if sqrt(sqr(follow.x - x) + sqr(follow.y - y)) > chase_r {
+		} else if sqrt(sqr(follow.x - x) + sqr(follow.y - y)) > chase_r || collision_line(x,y, follow.x, follow.y, oCollidable, false, true) != noone {
 			follow = noone;
 			shoot_wait_left = shoot_pause;
 			cur_state = SHOOTING_STATE.on_path;

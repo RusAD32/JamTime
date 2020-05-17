@@ -1,12 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-randomize();
-room_width = irandom_range(60, 600) * 32;
-room_height = irandom_range(60, 600) * 32;
+room_width = ceil(irandom_range(120, 240) * 32 * sqrt(level_number));
+room_height = ceil(irandom_range(120, 240) * 32 * sqrt(level_number));
 /// Create the Level
 cellsize = 32;
 roomsizeaverage = choose(14,16,18,20);
-rooms = irandom_range(5, 50);
+rooms = irandom_range(20, 50);
 hallwaysize = choose(3,4,5);
 padding = choose(4,8,10);
 
@@ -15,10 +14,11 @@ padding = choose(4,8,10);
 // CREATE DUNGEON
 scr_create_dungeon3(cellsize, rooms, roomsizeaverage, hallwaysize, padding);
 
-var dist_between_enemies = 2000 / level_number;
-var dist_between_traps = 1000 / level_number;
+var dist_between_enemies = ceil(2000 / ln(level_number+1));
+var dist_between_traps = ceil(750 / ln(level_number+1));
+var dist_between_powerups = ceil(250 / ln(level_number+1));
 // spawn objects in this dungeon
-var width = (room_width div cellsize);
+var width = (room_width div cellsize);	
 var height = (room_height div cellsize);
 for (var yy = 0; yy < height; yy++) {
     for (var xx = 0; xx < width; xx++) {
@@ -35,29 +35,35 @@ for (var yy = 0; yy < height; yy++) {
 					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oEnemyShy)
 				} 
 			}
-			
-			if irandom(100) == 1 && not collision_circle(xx*cellsize, yy*cellsize, 100 ,oPlayer,false,false){
-				instance_create_depth(xx*cellsize, yy*cellsize, -10, oSpikeFloor);
-			} else if irandom(200) == 1 && not collision_circle(xx*cellsize, yy*cellsize, 100 ,oPlayer,false,false){
-				instance_create_depth(xx*cellsize, yy*cellsize, -10, oBonusTime);
-			} else if irandom(500) == 1 {
-				instance_create_depth(xx*cellsize, yy*cellsize, -10, oPowerupChest);
+			if not collision_circle(xx*cellsize, yy*cellsize, dist_between_traps,oTrap,false,false) {
+				if irandom(100) == 1 && not collision_circle(xx*cellsize, yy*cellsize, 100 ,oPlayer,false,false){
+					instance_create_depth(xx*cellsize, yy*cellsize, -10, oSpikeFloor);
+				}
+			}
+			if not collision_circle(xx*cellsize, yy*cellsize, dist_between_powerups,oPowerup,false,false) {
+				 if irandom(200) == 1 && not collision_circle(xx*cellsize, yy*cellsize, 200, oPlayer,false,false){
+					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oBonusTime);
+				} else if irandom(500) == 1 {
+					instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oPowerupChest);
+				}
 			}
 		} else if ds_grid_get(grid, xx, yy) == WALL {
-			var angle = 0;
-			if ds_grid_get(grid, xx, yy-1) == FLOOR {
-				angle = 90;	
-			} else if ds_grid_get(grid, xx-1, yy) == FLOOR {
-				angle = 180;
-			} else if ds_grid_get(grid, xx, yy+1) == FLOOR {
-				angle = 270;	
-			}
-			if irandom(100) = 1 {
-				var fwall = instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oWallFlame);
-				fwall.image_angle = angle;
-			} else if irandom(100) = 1 {
-				var fwall = instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oWallArrows);
-				fwall.image_angle = angle;
+			if not collision_circle(xx*cellsize, yy*cellsize, dist_between_traps,oTrap,false,false) {
+				var angle = 0;
+				if ds_grid_get(grid, xx, yy-1) == FLOOR {
+					angle = 90;	
+				} else if ds_grid_get(grid, xx-1, yy) == FLOOR {
+					angle = 180;
+				} else if ds_grid_get(grid, xx, yy+1) == FLOOR {
+					angle = 270;	
+				}
+				if irandom(100) = 1 {
+					var fwall = instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oWallFlame);
+					fwall.image_angle = angle;
+				} else if irandom(100) = 1 {
+					var fwall = instance_create_depth(xx*cellsize + cellsize/2, yy*cellsize + cellsize/2, -10, oWallArrows);
+					fwall.image_angle = angle;
+				}
 			}
 		}
 	}

@@ -7,3 +7,5 @@ h = camera_get_view_height(cam);
 
 x = camera_get_view_x(cam);
 y = camera_get_view_y(cam);
+
+rand = irandom(1000000);

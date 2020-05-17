@@ -12,6 +12,7 @@ enum TRANS_MODE {
 	NEXT,
 	GOTO,
 	RESTART,
+	RELOAD,
 	INTRO
 }
 

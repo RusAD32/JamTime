@@ -14,7 +14,9 @@ var rooms       = argument1;
 var roomsize    = argument2;
 var hallwaysize = argument3;
 var padding     = argument4;
-
+var room_dist_max = 0;
+var room_dist_max_x = 0;
+var room_dist_max_y = 0;
 
 // Set up some constants
 FLOOR       = -5;
@@ -38,14 +40,16 @@ randomize();
 // Create the controller in center of grid
 var cx = (width div 2);
 var cy = (height div 2);
+var xx_init = cx * cellsize + cellsize/2;
+var yy_init = cy * cellsize + cellsize/2;
 
 // Create the player
 if not instance_exists(oPlayer) {
-	instance_create(cx * cellsize + cellsize/2, cy * cellsize + cellsize/2, oPlayer);
+	instance_create(xx_init, yy_init, oPlayer);
 } else {
 	with oPlayer {
-		x = cx * cellsize + cellsize/2;
-		y = cy * cellsize + cellsize/2;
+		x = xx_init;
+		y = yy_init;
 	}
 }
 
@@ -120,8 +124,12 @@ repeat(rooms) {
             ds_grid_set(grid, cx + xx, cy + yy, FLOOR);
         }
     }
-	if makehallway == 0 {
-		instance_create_depth(cx*cellsize, cy*cellsize, -cy*cellsize, oNextLevel);
+	// let's use Manhattan metrics for distance
+	var dst = abs(cx * cellsize + cellsize/2 - xx_init) + abs(cy * cellsize + cellsize/2 - yy_init);
+	if dst > room_dist_max{
+		room_dist_max = dst;
+		room_dist_max_x = cx*cellsize + cellsize/2;
+		room_dist_max_y = cy*cellsize + cellsize/2;
 	}
     
     
@@ -138,6 +146,8 @@ repeat(rooms) {
     // Add 1 to passthrough because we have completed this room
     passthrough++;
 }
+
+instance_create_depth(room_dist_max_x, room_dist_max_y, -room_dist_max_y, oNextLevel);
 
 
 // Check to see if there is a floor tile aginst the edge of the grid and change it to a wall
@@ -172,11 +182,11 @@ for (var yy = 0; yy < height; yy++) {
         // IF YOU HAVE YOUR OWN TILES, THIS IS WHERE YOU WOULD ADD IT
         if (ds_grid_get(grid, xx, yy) == FLOOR) {
             // Draw Floor
-            tile_add(bg_floor, 0, 0, cellsize, cellsize, xx * cellsize, yy * cellsize, 0)
+            tile_add(bg_floor, 0, 0, cellsize, cellsize, xx * cellsize, yy * cellsize, 0);
         }
         if (ds_grid_get(grid, xx, yy) == WALL) {
             // Draw Wall
-			instance_create_depth(xx*cellsize, yy*cellsize, -1, oCollidable)
+			instance_create_depth(xx*cellsize, yy*cellsize, -1, oCollidable);
             tile_add(bg_wall, 0, 0, cellsize, cellsize, xx * cellsize, yy * cellsize, 0);
         }
     }

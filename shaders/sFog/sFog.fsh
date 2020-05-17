@@ -89,5 +89,5 @@ void main() {
     // Use the noise function
     float n = snoise(st);
 
-    gl_FragColor = vec4(0.7,0.3,1,n*0.3);
+    gl_FragColor = vec4(0.7,0.3,1,n*0.1);
 }

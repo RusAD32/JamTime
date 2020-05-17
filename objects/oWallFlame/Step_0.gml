@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if oPlayer.time_stop_time_left > 0 {
+if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF {
 	exit;	
 }
 if time_left == 0 {

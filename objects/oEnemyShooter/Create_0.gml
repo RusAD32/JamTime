@@ -18,3 +18,4 @@ proj_speed = irandom_range(proj_speed_min, proj_speed_max)
 shoot_pause = random_range(shoot_speed_timeout_min, shoot_speed_timeout_max);
 shoot_wait_left = 0;
 cur_state = SHOOTING_STATE.on_path;
+look_dir = 0;

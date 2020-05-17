@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-if oPlayer.time_stop_time_left > 0 {
+if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF {
 	exit;	
 }
 var ang = 0;

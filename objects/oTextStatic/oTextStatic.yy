@@ -1,38 +1,38 @@
 {
-    "id": "66da56f5-588d-41a9-80b9-f74f2acf2cb1",
+    "id": "37f682b2-34d2-4331-b446-ec1a6650c6b6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_level",
+    "name": "oTextStatic",
     "eventList": [
         {
-            "id": "a555171e-eb04-48bf-92a6-94e4263f9742",
+            "id": "044ce9ec-df7d-45f3-a9c9-8446b28141f1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "66da56f5-588d-41a9-80b9-f74f2acf2cb1"
+            "m_owner": "37f682b2-34d2-4331-b446-ec1a6650c6b6"
         },
         {
-            "id": "88f44e6c-6eec-4994-a44e-5137d828fc6f",
+            "id": "e4b4e0de-b2a5-47ab-8fc5-bcda6962eb76",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "37f682b2-34d2-4331-b446-ec1a6650c6b6"
+        },
+        {
+            "id": "4b74df77-a2f3-4d1e-97b8-5f5ba68e7c6c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
             "eventtype": 8,
-            "m_owner": "66da56f5-588d-41a9-80b9-f74f2acf2cb1"
-        },
-        {
-            "id": "51f6316e-3fad-4ea5-9f0d-09b7e37d92bb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 32,
-            "eventtype": 9,
-            "m_owner": "66da56f5-588d-41a9-80b9-f74f2acf2cb1"
+            "m_owner": "37f682b2-34d2-4331-b446-ec1a6650c6b6"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -48,10 +48,8 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 0,
-    "physicsShapePoints": [
-        
-    ],
+    "physicsShape": 1,
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,

@@ -6,4 +6,4 @@ with oLevelGenerator {
 with oPlayer {
 	sprint_frames_left = sprint_frames_max;	
 }
-transition(TRANS_MODE.GOTO, room);
+transition(TRANS_MODE.RELOAD, room);
