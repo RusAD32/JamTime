@@ -6,6 +6,10 @@
 *
 */
 if oTransition.mode != TRANS_MODE.OFF {
+	if audio_emitter_exists(footsteps) {
+		audio_emitter_free(footsteps);
+		footsteps = noone;
+	}
 	exit;	
 }
 
@@ -24,9 +28,13 @@ key_invis = keyboard_check_pressed(ord("Q")) || gamepad_button_check_pressed(0, 
 
 
 if key_sprint && sprint_frames_left > 0 {
-	var cur_spd = max_speed;
+	var cur_spd = max_speed
 } else {
-	var cur_spd = ceil(max_speed *2 / 3); 	
+	var cur_spd = ceil(max_speed * 2 / 3); 	
+}
+
+if audio_emitter_exists(self.footsteps) {
+	audio_emitter_gain(self.footsteps, sqr(cur_spd/max_speed));	
 }
 
 if key_invis and invis_uses > 0 {
@@ -140,9 +148,20 @@ if y + vspd < 0 || y + vspd > room_height {
 *
 */
 
-
 x += hspd;
 y += vspd;
+
+if hspd == 0 && vspd == 0 && audio_emitter_exists(footsteps) {
+	audio_emitter_free(footsteps);
+	footsteps = noone;
+}
+if (hspd != 0 || vspd != 0) && !audio_emitter_exists(footsteps) {
+	footsteps = audio_emitter_create();
+	audio_play_sound_on(footsteps, sfxFootstepsPlayer,true, 25);	
+}
+if audio_emitter_exists(footsteps) {
+	audio_emitter_position(footsteps, x, y, 0);
+}
 
 if controller {
 	if gamepad_axis_value(0, gp_axisrh) != 0 {
@@ -156,3 +175,4 @@ if controller {
 	look_at_y = mouse_y - y
 }
 look_angle = 90 - cartesianToPolar(look_at_x, look_at_y) * 180 / pi;
+show_debug_message(footsteps);

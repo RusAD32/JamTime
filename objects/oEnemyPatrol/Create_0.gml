@@ -92,3 +92,6 @@ dist_left = vectors[cur_vec, 0];
 wait_time = round(irandom_range(wait_time_min, wait_time_max)); // frames
 cur_wait = 0;
 
+pitch = random_range(0.9, 1.1);
+gain = random_range(0.5, 0.7);
+footsteps = noone;

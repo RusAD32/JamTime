@@ -3,6 +3,10 @@
 
 // Inherit the parent event
 if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF{
+	if audio_emitter_exists(footsteps) {
+		audio_emitter_free(footsteps);
+		footsteps = noone;
+	}
 	exit;	
 }
 
@@ -12,6 +16,7 @@ switch cur_state {
 		var p = collision_circle(x, y, view_cone_length, oPlayer, false, false);
 		if p && 
 				abs(vectors[cur_vec, 1] - cartesianToPolar(p.x - x, p.y - y)) < view_cone_angle &&
+				collision_line(x, y, p.x, p.y, oCollidable, false, false) == noone &&
 				p.invis_time_left == 0 {
 			follow = oPlayer;
 			cur_state = FOLLOW_STATE.chasing;
@@ -52,6 +57,14 @@ switch cur_state {
 		
 		x += hspd;
 		y += vspd;
+		if !audio_emitter_exists(footsteps) {
+			footsteps = audio_emitter_create();
+			audio_emitter_pitch(footsteps, pitch);
+			audio_emitter_gain(footsteps, gain);
+			audio_play_sound_on(footsteps, footstep_sound, true, 25);
+		}
+		
+		audio_emitter_position(footsteps, x, y, 0);
 		look_dir = cartesianToPolar(xdist, ydist);
 		break;
 	}
@@ -71,10 +84,20 @@ switch cur_state {
 		vspd = sign(ydist)*min(abs(ydist), abs(ydist/dist_to_target*max_speed));
 		x += hspd;
 		y += vspd;
+		if !audio_emitter_exists(footsteps) {
+			footsteps = audio_emitter_create();
+			audio_emitter_pitch(footsteps, pitch);
+			audio_emitter_gain(footsteps, gain);
+			audio_play_sound_on(footsteps, footstep_sound, true, 25);
+		}
+		
+		audio_emitter_position(footsteps, x, y, 0);
 		look_dir = cartesianToPolar(xdist, ydist);
 		if x == init_x && y == init_y {
 			cur_vec = 0;
 			cur_state = FOLLOW_STATE.on_path;
+			audio_emitter_free(footsteps);
+			footsteps = noone;
 		}
 		break;
 	}

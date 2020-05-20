@@ -16,3 +16,4 @@ shake_len = 30;
 shake_rem = 0;
 
 buff = 16
+audio_listener_orientation(0,1,0,0,0,1);

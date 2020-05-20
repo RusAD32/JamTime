@@ -9,6 +9,7 @@ if iframes == 0 {
 	} else {
 		shields--;
 	}
+	audio_play_sound(choose(sfxBurn1,sfxBurn2,sfxBurn3), 20, false);
 	screenshake(10, 30, 0.7);
 	iframes = 60;
 }

@@ -11,6 +11,7 @@ if iframes == 0 {
 	}
 	hspd += sign(x - other.x) * 3 + cos(other.angle) * 3;
 	vspd += sign(y - other.y) * 3 + sin(other.angle) * 3;
+	audio_play_sound(choose(sfxBurn1,sfxBurn2,sfxBurn3), 20, false);
 	screenshake(10, 30, 0.7);
 	iframes = 60;
 	instance_destroy(other);

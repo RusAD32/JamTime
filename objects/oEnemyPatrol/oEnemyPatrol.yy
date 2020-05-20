@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 1,
             "m_owner": "c102d7eb-d175-4b61-b260-15ebd26938f4"
+        },
+        {
+            "id": "7bf6cca1-90c8-4955-a0ba-5fa570b44561",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 7,
+            "m_owner": "c102d7eb-d175-4b61-b260-15ebd26938f4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -145,6 +155,20 @@
             "value": "180",
             "varName": "wait_time_max",
             "varType": 1
+        },
+        {
+            "id": "43a01893-5554-450e-a74e-e6f1a4a442b1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "sfxFootstepsEnemy",
+            "varName": "footstep_sound",
+            "varType": 5
         }
     ],
     "solid": false,

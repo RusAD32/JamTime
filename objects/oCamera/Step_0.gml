@@ -23,6 +23,7 @@ y = clamp(y, view_h_half + buff, room_height - view_h_half - buff)
 //shaking
 x += random_range(-shake_rem, shake_rem)
 y += random_range(-shake_rem, shake_rem)
+audio_listener_position(x, y, 0);
 
 shake_rem = max(0, shake_rem - ((1/shake_len) * shake_amp));
 shake_len = max(0, shake_len - 1);

@@ -13,6 +13,7 @@ if iframes == 0 {
 	//y += sign(y - other.y) * 5;
 	hspd += sign(x - other.x) * 5;
 	vspd += sign(y - other.y) * 5;
+	audio_play_sound(choose(sfxHit1,sfxHit2,sfxHit3,sfxHit4), 20, false);
 	screenshake(10, 30, 0.7);
 	iframes = 60;
 }

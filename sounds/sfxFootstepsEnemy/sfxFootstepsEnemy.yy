@@ -1,8 +1,8 @@
 {
-    "id": "52c17875-43d3-43dc-9e77-05271e67dd3f",
+    "id": "d182ca77-6186-42e1-b005-cf66f8c7c395",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sfxArrowWallHit",
+    "name": "sfxFootstepsEnemy",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "addff24c-883e-42ee-9a43-170fd9a112b7"
+        },
+        {
+            "id": "d59e1f8c-19ad-408b-972c-6b4f3793da31",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "addff24c-883e-42ee-9a43-170fd9a112b7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -40,6 +50,14 @@
             "objectId": "77586754-7212-4ef9-92a7-82587479a6d5",
             "propertyId": "0a51a181-c606-4448-8f29-5fa206bfe3bb",
             "value": "600"
+        },
+        {
+            "id": "518e9225-09dd-42d0-a890-a661d49eb1e7",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "c102d7eb-d175-4b61-b260-15ebd26938f4",
+            "propertyId": "43a01893-5554-450e-a74e-e6f1a4a442b1",
+            "value": "sfxFootstepsPlayer"
         }
     ],
     "parentObjectId": "77586754-7212-4ef9-92a7-82587479a6d5",

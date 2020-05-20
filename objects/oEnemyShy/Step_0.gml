@@ -3,6 +3,10 @@
 
 // Inherit the parent event
 if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF {
+	if audio_emitter_exists(footsteps) {
+		audio_emitter_free(footsteps);
+		footsteps = noone;
+	}
 	exit;	
 }
 var ang = 0;

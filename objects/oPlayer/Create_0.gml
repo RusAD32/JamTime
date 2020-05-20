@@ -51,3 +51,5 @@ time_stop_time_max = 3*60;
 
 invis_time_left = 0;
 invis_time_max = 5*60;
+
+footsteps = noone;

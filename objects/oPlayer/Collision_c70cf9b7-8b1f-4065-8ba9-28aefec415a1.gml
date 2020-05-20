@@ -10,5 +10,6 @@ if other.cur_state == SPIKE_STATE.on && iframes == 0 {
 		shields--;
 	}
 	screenshake(10, 30, 0.7);
+	audio_play_sound(choose(sfxHit1,sfxHit2,sfxHit3,sfxHit4), 20, false);
 	iframes = 60;
 }

@@ -2,4 +2,4 @@
 // You can write your code in this editor
 time_alive_left = 60;
 
-sfx = audio_play_sound_at(sfxFire, oCamera.x-x, oCamera.y-y, 0, 250, 750, 10, false, 10);
+sfx = audio_play_sound_at(sfxFire, x, y, 0, 250, 750, 10, false, 10);

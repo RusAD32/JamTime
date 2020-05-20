@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-randomize()
+//randomize()
 // Inherit the parent event
 event_inherited();
 view_cone_angle = random_range(view_cone_angle_min, view_cone_angle_max);
 view_cone_length = irandom_range(view_cone_length_min, view_cone_length_max);
-chase_r = irandom_range(view_cone_length, view_cone_length+chase_r_offset_max);
+chase_r = irandom_range(view_cone_length + 32, view_cone_length + 32 + chase_r_offset_max);
 enum FOLLOW_STATE {
 	on_path,
 	chasing,

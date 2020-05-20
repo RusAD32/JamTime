@@ -10,6 +10,7 @@ if iframes == 0 {
 		hspd += sign(x - other.x) * 3 + cos(other.image_angle*pi/180) * 3;
 		vspd += sign(y - other.y) * 3 + sin(other.image_angle*pi/180) * 3;
 		screenshake(10, 30, 0.7);
+		audio_play_sound(choose(sfxHit1,sfxHit2,sfxHit3,sfxHit4), 20, false);
 		iframes = 60;
 	}
 	instance_destroy(other);
