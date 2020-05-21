@@ -8,7 +8,8 @@
         "930d6489-f8b2-4242-ae61-92c320471360",
         "5eed7af3-f4fb-46e0-a4af-5b30a14dadff",
         "89527dc8-4524-4d31-9cf8-632257de9e4c",
-        "2383bbb9-4e77-48bf-a752-1770acb46cda"
+        "2383bbb9-4e77-48bf-a752-1770acb46cda",
+        "c45c2230-f708-4983-8556-70129ea1f601"
     ],
     "filterType": "GMSprite",
     "folderName": "traps",
