@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_width = ceil(irandom_range(120, 240) * 32 * sqrt(level_number));
-room_height = ceil(irandom_range(120, 240) * 32 * sqrt(level_number));
+room_width = ceil(irandom_range(120, 240) * 32 * level_number);
+room_height = ceil(irandom_range(120, 240) * 32 * level_number);
 /// Create the Level
 cellsize = 32;
 roomsizeaverage = choose(14,16,18,20);
@@ -14,9 +14,9 @@ padding = choose(4,8,10);
 // CREATE DUNGEON
 scr_create_dungeon3(cellsize, rooms, roomsizeaverage, hallwaysize, padding);
 
-var dist_between_enemies = ceil(2000 / ln(level_number+1));
-var dist_between_traps = ceil(750 / ln(level_number+1));
-var dist_between_powerups = ceil(250 / ln(level_number+1));
+var dist_between_enemies = ceil(2000 / level_number);
+var dist_between_traps = ceil(750 / level_number);
+var dist_between_powerups = ceil(250 / level_number);
 // spawn objects in this dungeon
 var width = (room_width div cellsize);	
 var height = (room_height div cellsize);

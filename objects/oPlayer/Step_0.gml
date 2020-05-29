@@ -175,4 +175,4 @@ if controller {
 	look_at_y = mouse_y - y
 }
 look_angle = 90 - cartesianToPolar(look_at_x, look_at_y) * 180 / pi;
-show_debug_message(footsteps);
+//show_debug_message(footsteps);

@@ -8,34 +8,35 @@ if place_meeting(x, y, oPlayer) {
 	var disagree = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(0, gp_shoulderrb);
 	if agree && !disagree {
 		oPlayer.time_left -= 5*60;
-		if irandom(100) == 1 {
+		var roll = random(1);
+		if roll < 0.05 {
 			// POWERUPS.timeStop;
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "Time stop charge!\nPress E to use"
 			oPlayer.time_stop_uses++;
-		} else if irandom(100) == 1 {
+		} else if roll < 0.10 {
 			// POWERUPS.invis;
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "Invisibility charge!\nPress Q to use"
 			oPlayer.invis_uses++;
-		} else if irandom(100) < 5 {
+		} else if roll < 0.20 {
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "Speed up!"
 			oPlayer.max_speed++;
-		} else if irandom(100) < 5 {
+		} else if roll < 0.30 {
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "Three shields!\n They'll protect you"
 			oPlayer.shields+=3;
-		} else if irandom(100) < 10 {
+		} else if roll < 0.50 {
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "A shield!\nIt will protect you"
 			oPlayer.shields++;
-		} else if irandom(100) < 10 {
+		} else if roll < 0.65 {
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "Stamina up!\n+1 second"
 			oPlayer.sprint_frames_max += 1*60;	
 			oPlayer.sprint_frames_left += 1*60;	
-		} else if irandom(100) < 15 {
+		} else if roll < 0.80 {
 			var txt = instance_create_depth(x,y,-y, oTextStatic);
 			txt.text = "Stamina restored!"
 			oPlayer.sprint_frames_left = oPlayer.sprint_frames_max;

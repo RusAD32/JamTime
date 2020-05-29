@@ -187,7 +187,7 @@ for (var yy = 0; yy < height; yy++) {
         if (ds_grid_get(grid, xx, yy) == WALL) {
             // Draw Wall
 			instance_create_depth(xx*cellsize, yy*cellsize, -1, oCollidable);
-            tile_add(sWall, 0, 0, cellsize, cellsize, xx * cellsize, yy * cellsize, 0);
+            //tile_add(sWall, 0, 0, cellsize, cellsize, xx * cellsize, yy * cellsize, 0);
         }
     }
 }

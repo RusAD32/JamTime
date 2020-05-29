@@ -18,7 +18,7 @@ em_init(
     sfxArrowWallHit,
 );
 
-em_add_section("Tutorial",0);
+em_add_section("Tutorial",startTutorial);
 em_add_section("Play",startGame);
 em_add_section("Exit",endGame);
 

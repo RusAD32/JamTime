@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0b0efa32-96a1-4230-a0cb-553e736b0892",
+            "Value": {
+                "id": "38478f18-2429-4379-8293-76553bdaeef2",
+                "resourcePath": "rooms\\rTutorial\\rTutorial.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0d0592e4-b382-46e1-85be-e47b3979fa4a",
             "Value": {
                 "id": "3177e708-7fd0-4734-8dbd-e08f8a59f8a9",
@@ -127,11 +135,27 @@
             }
         },
         {
+            "Key": "0ececaeb-4ace-46cf-97b6-6c77e52cf6f9",
+            "Value": {
+                "id": "b0f9e257-cb4c-4f12-8562-d21de4649676",
+                "resourcePath": "sprites\\sSpike\\sSpike.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "16894ba2-f1a3-4fae-9f43-7374dbac6c05",
             "Value": {
                 "id": "a07d5f2f-4caa-45f8-920e-a6e30c713f0b",
                 "resourcePath": "views\\16894ba2-f1a3-4fae-9f43-7374dbac6c05.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "17c8bd03-8e0b-4f93-8237-f128cf7e7e91",
+            "Value": {
+                "id": "30eb2865-b178-46cb-b763-f6ae73a1a480",
+                "resourcePath": "sounds\\sfxAmbience\\sfxAmbience.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -551,6 +575,14 @@
             }
         },
         {
+            "Key": "83cc89f6-b84c-457d-a850-66790dd10301",
+            "Value": {
+                "id": "338afefa-2fdd-4799-86d0-bf1f51072238",
+                "resourcePath": "sprites\\sArrow2\\sArrow2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85b3cda9-8718-4ba9-bb6b-9e423cd7ab1e",
             "Value": {
                 "id": "d3753da7-6dec-4d74-88d9-812d8fab4de5",
@@ -575,6 +607,14 @@
             }
         },
         {
+            "Key": "88b0f268-131e-4345-a846-2f68b3ba004f",
+            "Value": {
+                "id": "1947d3f4-5b37-4526-a8ec-6542e21a89ad",
+                "resourcePath": "sounds\\audExposition\\audExposition.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "88e4fcd0-2005-49f9-8887-139af4fc1cec",
             "Value": {
                 "id": "f9317a55-ac7c-4062-a116-0ba6d4fac3ea",
@@ -586,7 +626,15 @@
             "Key": "89527dc8-4524-4d31-9cf8-632257de9e4c",
             "Value": {
                 "id": "7476138d-7019-43ad-90c3-27f6d31d4f9a",
-                "resourcePath": "sprites\\sArrowTower\\sArrowTower.yy",
+                "resourcePath": "sprites\\sArrowTower3\\sArrowTower3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8b6370e4-7fc1-47a0-b7a1-4cb9b66c452e",
+            "Value": {
+                "id": "d5d610ee-3d64-4db6-bc73-0aa1062ee8b8",
+                "resourcePath": "sprites\\sFlamethrower\\sFlamethrower.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -823,18 +871,18 @@
             }
         },
         {
-            "Key": "c45c2230-f708-4983-8556-70129ea1f601",
-            "Value": {
-                "id": "c679de5c-b653-4914-a7c5-a77fa1623706",
-                "resourcePath": "sprites\\sSpikeNew\\sSpikeNew.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c4ec3d42-d931-4d98-a463-949a26d1d3d7",
             "Value": {
                 "id": "49dfe784-81b3-4e46-9409-2c7affce0296",
                 "resourcePath": "objects\\oFlame\\oFlame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c500e2c3-2042-48bb-b68d-4334bdf35a81",
+            "Value": {
+                "id": "e13a08c7-0551-4a61-8ea0-10adc0a75511",
+                "resourcePath": "objects\\oTrigger\\oTrigger.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -903,6 +951,14 @@
             }
         },
         {
+            "Key": "d64f344a-8b08-4064-b459-3f5e593c09cd",
+            "Value": {
+                "id": "d5b79ee1-0f7d-42ca-b6df-d8c2337ae749",
+                "resourcePath": "sprites\\sArrowTower\\sArrowTower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d7006a09-26d9-4635-b02f-7bcfb69ae304",
             "Value": {
                 "id": "1be4a096-0f52-4715-b233-2fa70de72956",
@@ -935,6 +991,14 @@
             }
         },
         {
+            "Key": "e4d65462-fe7d-4bbc-8972-ae4808348856",
+            "Value": {
+                "id": "f09cb331-918a-4e5e-801c-d811425c9038",
+                "resourcePath": "sprites\\sSpikeOn1\\sSpikeOn1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e504cd08-778d-4792-a8a8-37786f9111c4",
             "Value": {
                 "id": "d6598279-5fdd-4e79-89e4-4bd04f19848b",
@@ -946,7 +1010,7 @@
             "Key": "e8e7050a-3bd2-481b-8493-1f159595dbb3",
             "Value": {
                 "id": "c50bc2b1-665b-45f8-82c1-b1a0740f63bd",
-                "resourcePath": "rooms\\room5\\room5.yy",
+                "resourcePath": "rooms\\rMainMenu\\rMainMenu.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1037,6 +1101,14 @@
                 "resourcePath": "sprites\\bg_corridor\\bg_corridor.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "ff4f4827-c88f-4ee0-83f7-e4333dd4b2b6",
+            "Value": {
+                "id": "b25c0cc2-fdd1-42b1-bad1-dc6b4a1f63f2",
+                "resourcePath": "scripts\\startTutorial\\startTutorial.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -1056,6 +1128,7 @@
         "59a1e746-f776-410d-95d7-70446952b6ab",
         "f5b768aa-3254-457b-92ec-81193dc2c797",
         "f35b48da-0dda-482e-b5a7-f4305849627f",
+        "ff4f4827-c88f-4ee0-83f7-e4333dd4b2b6",
         "06fd57d8-5e07-42f0-80b7-6929dd0905fe"
     ],
     "tutorial": ""

@@ -11,11 +11,15 @@ if oPlayer.time_stop_time_left > 0 || oTransition.mode != TRANS_MODE.OFF {
 }
 var ang = 0;
 with oPlayer {
-	ang = cosBetweenVectors(mouse_x - x, mouse_y - y, other.x - x, other.y - y);
+	ang = cosBetweenVectors(cos(look_angle*pi/180), -sin(look_angle*pi/180), other.x - x, other.y - y)
 }
-if ang < 0.7 {
+if abs(ang) > 0.7 {
 	event_inherited();
 } else {
+	if audio_emitter_exists(footsteps) {
+		audio_emitter_free(footsteps);
+		footsteps = noone;
+	}
 	var p = collision_circle(x, y, view_cone_length, oPlayer, false, false);
 	if p && 
 			abs(vectors[cur_vec, 1] - cartesianToPolar(p.x - x, p.y - y)) < view_cone_angle &&

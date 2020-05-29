@@ -1,7 +1,4 @@
 /// @description init 
-for (i = 0; i < 12; i++) {
-	show_debug_message(gamepad_is_connected(i))
-}
 
 // variables for movement
 max_speed = 10;
@@ -30,7 +27,7 @@ h = display_get_gui_height();
 deactivaion_offset = 1000;
 show_debug_message("Я родился!")
 
-time_left = 1*60*60 // 1 minute
+time_left = 5*60*60 // 5 minutes
 look_angle = 0;
 
 iframes = 0;
@@ -53,3 +50,4 @@ invis_time_left = 0;
 invis_time_max = 5*60;
 
 footsteps = noone;
+ambience = audio_play_sound(sfxAmbience, 100, true);
