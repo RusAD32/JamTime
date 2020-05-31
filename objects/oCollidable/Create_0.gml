@@ -17,5 +17,3 @@ if neighbour and neighbour.sprite_width == sprite_width {
 	instance_destroy(self);
 }
 depth = -y;
-
-

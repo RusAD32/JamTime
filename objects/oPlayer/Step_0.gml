@@ -155,9 +155,15 @@ if hspd == 0 && vspd == 0 && audio_emitter_exists(footsteps) {
 	audio_emitter_free(footsteps);
 	footsteps = noone;
 }
+if hspd == 0 && vspd == 0 && sprite_index != idle {
+	sprite_index = idle;	
+}
 if (hspd != 0 || vspd != 0) && !audio_emitter_exists(footsteps) {
 	footsteps = audio_emitter_create();
 	audio_play_sound_on(footsteps, sfxFootstepsPlayer,true, 25);	
+}
+if (hspd != 0 || vspd != 0) && sprite_index != sPlayerWalking {
+		sprite_index = sPlayerWalking;
 }
 if audio_emitter_exists(footsteps) {
 	audio_emitter_position(footsteps, x, y, 0);

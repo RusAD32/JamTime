@@ -9,7 +9,7 @@ em_init(
     fa_center,
     fa_top,
     c_white,
-    "Time Themed Rogue-like",
+    "Run for your time!",
     100,
     0,
     0,

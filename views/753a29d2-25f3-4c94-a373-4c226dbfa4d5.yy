@@ -13,7 +13,8 @@
         "0ececaeb-4ace-46cf-97b6-6c77e52cf6f9",
         "d64f344a-8b08-4064-b459-3f5e593c09cd",
         "83cc89f6-b84c-457d-a850-66790dd10301",
-        "8b6370e4-7fc1-47a0-b7a1-4cb9b66c452e"
+        "8b6370e4-7fc1-47a0-b7a1-4cb9b66c452e",
+        "7102b05a-c14f-4c64-b362-e8cbcfb99bb5"
     ],
     "filterType": "GMSprite",
     "folderName": "traps",

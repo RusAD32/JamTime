@@ -5,7 +5,7 @@ if invis_time_left > 0 {
 } else {
 	var alpha = 1 - (iframes div 5 mod 2)	
 }
-draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, look_angle, c_white, alpha);
+draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, look_angle-90, c_white, alpha);
 
 
 if time_stop_time_left {

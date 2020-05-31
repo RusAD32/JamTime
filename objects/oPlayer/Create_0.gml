@@ -32,15 +32,14 @@ look_angle = 0;
 iframes = 0;
 
 dash_frames = 0;
-dash_frames_max = 10;
 
 sprint_frames_left = 10*60; // 10 seconds;
 sprint_frames_max = 10*60;
 
 shields = 0;
 defence = 1;
-time_stop_uses = 1;
-invis_uses = 1;
+time_stop_uses = 0;
+invis_uses = 0;
 
 time_stop_time_left = 0;
 time_stop_time_max = 3*60;
@@ -49,4 +48,4 @@ invis_time_left = 0;
 invis_time_max = 5*60;
 
 footsteps = noone;
-ambience = audio_play_sound(sfxAmbience, 100, true);
+audio_play_sound(sfxAmbience, 100, true);
