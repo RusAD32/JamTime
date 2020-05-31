@@ -7,6 +7,7 @@ if place_meeting(x, y, oPlayer) {
 	var agree = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderlb);
 	var disagree = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(0, gp_shoulderrb);
 	if agree && !disagree {
+		audio_play_sound(sfxChestOpen, 20, false);
 		oPlayer.time_left -= 5*60;
 		var roll = random(1);
 		if roll < 0.05 {
@@ -47,6 +48,7 @@ if place_meeting(x, y, oPlayer) {
 		}
 		instance_destroy(self);
 	} else if disagree && !agree {
+		audio_play_sound(sfxChestBreak, 20, false);
 		oPlayer.time_left += 5*60;
 		instance_destroy(self);
 	}

@@ -7,3 +7,6 @@ instance_deactivate_region(x-deactivaion_offset, y-deactivaion_offset, 2*deactiv
 instance_activate_object(oCamera);
 instance_activate_object(oTransition);
 instance_activate_object(oLevelGenerator);
+if time_left == 0 {
+	transition(TRANS_MODE.GOTO, rDefeat)	
+}

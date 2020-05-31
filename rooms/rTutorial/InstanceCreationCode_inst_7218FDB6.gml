@@ -1,0 +1,1 @@
+text = "LMB/LT to spend your time and open a chest\nOr RMB/RT to destroy the chest and restore time"

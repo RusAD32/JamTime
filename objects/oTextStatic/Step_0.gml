@@ -12,5 +12,5 @@ if button_dismiss || time_to_live == 0 {
 
 time_to_live--;
 
-x = oPlayer.x;
-y = oPlayer.y - oPlayer.sprite_height ;
+//x = oPlayer.x;
+//y = oPlayer.y - oPlayer.sprite_height ;

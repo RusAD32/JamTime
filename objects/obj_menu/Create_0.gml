@@ -1,6 +1,6 @@
 /// @description EM_INIT AND EM_ADD_SECTION
 em_init(
-    3,
+    4,
     fCyber,
     32,
     ">",
@@ -20,5 +20,6 @@ em_init(
 
 em_add_section("Tutorial",startTutorial);
 em_add_section("Play",startGame);
+em_add_section("Endless",startGameEndless);
 em_add_section("Exit",endGame);
 

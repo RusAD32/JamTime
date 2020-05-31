@@ -2,3 +2,5 @@
 // You can write your code in this editor
 
 randomize();
+endless = oTransition.endless;
+oTransition.endless = false;

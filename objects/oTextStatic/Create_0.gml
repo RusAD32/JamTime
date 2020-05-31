@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if oPlayer.controller == 0 {
+if instance_exists(oPlayer) && oPlayer.controller == 0 {
 	subtext = "Press SPACE to dismiss";
 } else {
 	subtext = "Press TRIANGLE to dismiss";
@@ -13,6 +13,7 @@ border = 15;
 
 time_to_live = 300; 
 
-
-x = oPlayer.x;
-y = oPlayer.y - oPlayer.sprite_height;
+if instance_exists(oPlayer) {
+	x = oPlayer.x;
+	y = oPlayer.y - oPlayer.sprite_height;
+}

@@ -1,0 +1,1 @@
+text = "Avoid traps and enemies.\nThey will decrease your time";

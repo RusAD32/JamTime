@@ -1,0 +1,1 @@
+text = "Find a door to proceed"

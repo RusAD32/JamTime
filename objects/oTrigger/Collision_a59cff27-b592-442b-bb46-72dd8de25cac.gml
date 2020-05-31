@@ -4,5 +4,5 @@ if instance_exists(oTextStatic) {
 	instance_destroy(instance_nearest(x, y, oTextStatic));
 }
 var newText = instance_create_depth(x,y, -y-100, oTextStatic);
-newText.text = "Mouse/RStick to look around"
+newText.text = text;
 instance_destroy(self)

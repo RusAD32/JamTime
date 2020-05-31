@@ -14,7 +14,6 @@ decel = 1;
 
 controller = 0;
 
-move_vector_len = 0;
 
 // variables for direction
 up = 0;

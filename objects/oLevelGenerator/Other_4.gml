@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+if room != rMainGame {
+	exit;	
+}
+
 room_width = ceil(irandom_range(120, 240) * 32 * level_number);
 room_height = ceil(irandom_range(120, 240) * 32 * level_number);
 /// Create the Level

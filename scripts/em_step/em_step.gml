@@ -41,6 +41,7 @@ if em_mouse_y == em_mouse_prev_y {
 		if (string_char_at(em_section_list[| em_position],0)==cur)
 		    em_section_list[| em_position] = string_delete(em_section_list[| em_position],1,1);	
 		em_position = new_em_position
+	    if (em_sound!=0) audio_play_sound(em_sound,10,0);
 	}
 }
 em_mouse_prev_y = em_mouse_y;
