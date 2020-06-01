@@ -271,14 +271,6 @@
             }
         },
         {
-            "Key": "417c675c-07a9-4882-91d7-52be38bcd6a6",
-            "Value": {
-                "id": "13c9d0cd-faa1-4cf7-8f75-6f797642357a",
-                "resourcePath": "datafiles_yy\\EasyMenu - How to implement it.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "4469469e-f43c-4180-ac18-1f103925a93a",
             "Value": {
                 "id": "9d654451-a213-43fe-a605-da4613d79c2a",
